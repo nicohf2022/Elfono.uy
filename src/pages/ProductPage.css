@@ -1,0 +1,200 @@
+/* ===============================
+   LAYOUT GENERAL
+================================ */
+.product-layout {
+  display: grid;
+  grid-template-columns: 120px 1fr 400px;
+  gap: 30px;
+  padding: 40px;
+  align-items: start;
+}
+
+/* ===============================
+   GALERÍA DE MINIATURAS
+================================ */
+.gallery-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* 👉 MINIATURAS: TAMAÑO FIJO */
+.thumb {
+  width: 80px;
+  height: auto;
+  border-radius: 12px;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.thumb:hover {
+  transform: scale(1.03);
+}
+
+.thumb.active,
+.thumb:hover {
+  opacity: 1;
+}
+
+/* ===============================
+   IMAGEN PRINCIPAL
+================================ */
+.main-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-image {
+  width: 75%;
+  max-width: 420px;
+  border-radius: 20px;
+  object-fit: contain;
+}
+
+/* ===============================
+   PANEL DE INFO
+================================ */
+.info-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.price {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/* ===============================
+   CAMPOS / SELECT
+================================ */
+.field label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+select {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+/* ===============================
+   CANTIDAD
+================================ */
+.qty-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.qty-wrapper button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #999;
+  background: #fff;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.qty-wrapper button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* ===============================
+   BOTÓN AGREGAR
+================================ */
+.add-btn {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  padding: 16px;
+  border-radius: 40px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.add-btn:disabled {
+  background: #444;
+}
+
+/* ===============================
+   DESCRIPCIÓN
+================================ */
+.description {
+  color: #444;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+/* ===============================
+   ACORDEONES
+================================ */
+.accordion summary {
+  cursor: pointer;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+  font-weight: 600;
+}
+
+.accordion p {
+  padding: 10px 0;
+  color: #555;
+}
+
+/* ===============================
+   📱 MOBILE RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  .product-layout {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  /* Imagen principal arriba */
+  .main-image-container {
+    order: 1;
+  }
+
+  .main-image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Galería horizontal, MISMO tamaño de thumbs */
+  .gallery-column {
+    order: 2;
+    flex-direction: row;
+    gap: 12px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+
+  /* Info abajo */
+  .info-panel {
+    order: 3;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .price {
+    font-size: 1.3rem;
+  }
+}

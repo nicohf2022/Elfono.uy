@@ -1,0 +1,218 @@
+/* ===============================
+   TOP BANNER
+================================ */
+.top-banner {
+  background-color: #F7F3EC;
+  color: #111;
+  text-align: center;
+  padding: 0.4rem 0;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* ===============================
+   NAVBAR
+================================ */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  min-height: 72px;
+  padding: 0 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 0 0 16px 16px;
+  position: relative;
+  z-index: 10;
+}
+
+/* ===============================
+   LEFT
+================================ */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.menu-text {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* ===============================
+   CENTER
+================================ */
+.navbar-center {
+  flex: 1;
+  text-align: center;
+}
+
+.logo-img {
+  height: 70px;
+  width: auto;
+  cursor: pointer;
+}
+
+/* ===============================
+   RIGHT
+================================ */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  position: relative;
+}
+
+/* ===============================
+   ICONS
+================================ */
+.icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.icon:hover {
+  color: #b8bfab;
+}
+
+/* ===============================
+   BADGE
+================================ */
+.icon-wrapper {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  background: #b8bfab;
+  color: white;
+  font-size: 0.7rem;
+  border-radius: 999px;
+  padding: 0 5px;
+}
+
+/* ===============================
+   RESPONSIVE NAVBAR
+================================ */
+@media (max-width: 600px) {
+  .navbar {
+    min-height: 60px;
+    padding: 0 1rem;
+  }
+
+  .menu-text {
+    display: none;
+  }
+
+  .logo-img {
+    height: 36px;
+  }
+
+  .navbar-right {
+    gap: 0.8rem;
+  }
+}
+
+/* ===============================
+   MENU OVERLAY (CLAVE)
+================================ */
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(6px);
+  z-index: 999;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+/* ===============================
+   MENU PANEL (CATEGORÍAS)
+================================ */
+.menu-panel {
+  background: #F7F3EC;
+  width: 78%;
+  max-width: 300px;
+  padding: 1.6rem 1.4rem;
+  box-shadow: 8px 0 28px rgba(0, 0, 0, 0.18);
+  animation: slideIn 0.3s ease;
+  border-top-right-radius: 22px;
+  border-bottom-right-radius: 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===============================
+   ANIMACIÓN
+================================ */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* ===============================
+   MENU TITLE
+================================ */
+.menu-panel h3 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  margin-bottom: 1.2rem;
+  color: #111;
+  letter-spacing: -0.01em;
+}
+
+.menu-panel h3::after {
+  content: "";
+  display: block;
+  width: 34px;
+  height: 3px;
+  margin-top: 8px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #111, #666);
+}
+
+/* ===============================
+   MENU LIST
+================================ */
+.menu-panel ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.menu-panel li {
+  border-radius: 14px;
+}
+
+/* ===============================
+   MENU LINKS
+================================ */
+.menu-panel a {
+  display: block;
+  padding: 0.85rem 1rem;
+  text-decoration: none;
+  color: #222;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 14px;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.menu-panel a:hover {
+  background: rgba(255, 255, 255, 0.6);
+  transform: translateX(4px);
+}

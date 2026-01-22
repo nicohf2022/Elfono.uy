@@ -1,0 +1,39 @@
+.catalog {
+  padding: 2rem;
+  text-align: center;
+}
+
+.catalog h1 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-align: left;
+  margin-bottom: 1.4rem;
+  position: relative;
+  letter-spacing: -0.02em;
+}
+
+/* Línea de subrayado igual a Nosotros / Envíos */
+.catalog h1::after {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 3px;
+  margin-top: 10px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #111, #666);
+}
+.subtitle {
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.catalog .product-stock {
+  display: none !important;
+}

@@ -1,0 +1,95 @@
+/* ===== FOOTER BASE ===== */
+.footer {
+  background: #fff;
+  color: #000;
+  padding: 2.5rem 3rem 1.5rem;
+  border-top: 1px solid #e6e6e6;
+}
+
+/* ===== CONTENEDOR SUPERIOR ===== */
+.footer-top {
+  max-width: 1400px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+}
+
+/* ===== IZQUIERDA ===== */
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footer-logo-img {
+  height: 42px;
+  width: auto;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+}
+
+/* ===== DERECHA ===== */
+.footer-right {
+  display: flex;
+  gap: 5rem;
+}
+
+.footer-block h5 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.footer-block p {
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+  opacity: 0.85;
+}
+
+/* ===== FOOTER BOTTOM ===== */
+.footer-bottom {
+  max-width: 1400px;
+  margin: 2rem auto 0;
+  padding-top: 1rem;
+  border-top: 1px solid #ededed;
+  font-size: 0.8rem;
+  color: #555;
+  display: flex;
+    justify-content: center;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .footer {
+    padding: 2rem 1.5rem 1.25rem;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .footer-right {
+    gap: 3rem;
+  }
+}

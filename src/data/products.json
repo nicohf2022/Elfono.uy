@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "category": "fundas",
+    "name": "MagSafe Trasparente",
+    "price": 319,
+    "isOffer": false,
+    "image": "/assets/trasparente-1.webp",
+    "gallery": [
+      "/assets/trasparente-1.webp",
+      "/assets/trasparente-2.webp",
+      "/assets/trasparente-3.webp"
+    ],
+    "description": "Case MagSafe transparente con protección reforzada.",
+    "variants": [
+      {
+        "model": "IPhone 11",
+        "color": "Unico",
+        "stock": 3
+      },
+      {
+        "model": "IPhone 11 pro",
+        "color": "Unico",
+        "stock": 0
+      },
+      {
+        "model": "IPhone 11 pro Max",
+        "color": "Unico",
+        "stock": 4
+      },
+      {
+        "model": "",
+        "color": "Único",
+        "stock": 0
+      }
+    ]
+  }
+]

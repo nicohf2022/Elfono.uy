@@ -1,0 +1,152 @@
+/* ===============================
+   PAGE BASE
+================================ */
+.page {
+  background: #fafafa;
+  padding: 3rem 1.25rem;
+}
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===============================
+   GRID LAYOUT
+================================ */
+.page-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+/* ===============================
+   CONTENT
+================================ */
+.page-content {
+  max-width: 640px;
+}
+
+.page-title {
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.6rem;
+  color: #111;
+}
+
+.page-title::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 3px;
+  margin-top: 10px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #111, #666);
+}
+
+.page-text {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  margin-bottom: 1.3rem;
+  color: #444;
+  max-width: 68ch;
+}
+
+.page-text strong {
+  color: #000;
+  font-weight: 700;
+}
+
+/* ===============================
+   IMAGE
+================================ */
+.page-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-image img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 28px;
+  box-shadow: 0 40px 80px rgba(0,0,0,0.25);
+  background-color: #F7F3EC;
+}
+
+/* ===============================
+   CTA
+================================ */
+.page-cta {
+  margin-top: 2.8rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.page-cta-text {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+}
+
+.page-cta-button {
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: #111;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.page-cta-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 900px) {
+  .page-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .page-image {
+    order: -1;
+  }
+
+  .page-image img {
+    max-width: 360px;
+  }
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 2.2rem 1rem;
+  }
+
+  .page-text {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  .page-cta {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .page-cta-button {
+  
+    text-align: center;
+  }
+}
