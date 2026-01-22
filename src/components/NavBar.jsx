@@ -4,7 +4,7 @@ import { FaSearch, FaUser, FaBookmark, FaShoppingBag, FaBars } from "react-icons
 import { TopBanner } from "./TopBanner";
 import { CartDrawer } from "./CartDrawer";   // ⭐ NUEVO
 import { useCart } from "./CartContext";     // ⭐ NUEVO
-import "./Navbar.css";
+import "./NavBar.css";
 import { useNavigate } from "react-router-dom";
 import { CategoryPage } from "../pages/CategoryPage";
 
