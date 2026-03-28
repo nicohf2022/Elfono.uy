@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useMemo, useState } from "react";
 
 const CartContext = createContext();
 const STORAGE_KEY = "elfone_cart";
@@ -25,15 +25,28 @@ export const CartProvider = ({ children }) => {
     }
   }, [items]);
 
-  const addToCart = (product, { model, quantity = 1 } = {}) => {
+  /**
+   * addToCart(product, { model, quantity, unitPrice })
+   * - unitPrice: precio final (ej: silicon iPhone 17 = 319)
+   * - Si no viene unitPrice, cae a product.price (compatibilidad)
+   */
+  const addToCart = (product, { model, quantity = 1, unitPrice } = {}) => {
+    const finalUnitPrice =
+      unitPrice != null && Number.isFinite(Number(unitPrice))
+        ? Number(unitPrice)
+        : Number(product?.price || 0);
+
     setItems((prev) => {
-      const key = `${product.id}-${model || "no-model"}`;
+      // ✅ IMPORTANTE: el precio también forma parte de la identidad
+      // porque Silicon Case puede tener distinto precio por modelo.
+      const key = `${product.id}-${model || "no-model"}-${finalUnitPrice}`;
+
       const existing = prev.find((item) => item.key === key);
 
       if (existing) {
         return prev.map((item) =>
           item.key === key
-            ? { ...item, quantity: item.quantity + quantity }
+            ? { ...item, quantity: (item.quantity || 0) + quantity }
             : item
         );
       }
@@ -44,11 +57,16 @@ export const CartProvider = ({ children }) => {
           key,
           id: product.id,
           name: product.name,
-          price: product.price,
           image: product.image,
           model: model || null,
           quantity,
-          // NO guardamos stock acá: el stock real viene de Google Sheets (API)
+
+          // ✅ Guardamos unitPrice (precio congelado)
+          unitPrice: finalUnitPrice,
+
+          // (Opcional) dejo price por compatibilidad con tu UI vieja si en algún lado lo usás
+          // pero idealmente en la UI uses item.unitPrice.
+          price: finalUnitPrice,
         },
       ];
     });
@@ -75,10 +93,20 @@ export const CartProvider = ({ children }) => {
 
   const clearCart = () => setItems([]);
 
-  const totalItems = items.reduce((acc, item) => acc + (item.quantity || 0), 0);
-  const totalAmount = items.reduce(
-    (acc, item) => acc + (item.quantity || 0) * (item.price || 0),
-    0
+  // ✅ Totales (unitPrice primero, si no existe cae a price)
+  const totalItems = useMemo(
+    () => items.reduce((acc, item) => acc + (item.quantity || 0), 0),
+    [items]
+  );
+
+  const totalAmount = useMemo(
+    () =>
+      items.reduce((acc, item) => {
+        const priceToUse =
+          item.unitPrice != null ? Number(item.unitPrice) : Number(item.price || 0);
+        return acc + (item.quantity || 0) * priceToUse;
+      }, 0),
+    [items]
   );
 
   return (

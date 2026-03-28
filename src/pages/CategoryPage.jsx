@@ -6,7 +6,7 @@ import "./CategoryPage.css";
 
 const CATEGORY_CONFIG = {
     fundas: {
-        title: "Fundas",
+        title: "CASE",
         description: "Protegé tu iPhone con estilo y máxima protección",
     },
     cargadores: {

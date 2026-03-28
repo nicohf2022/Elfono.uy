@@ -16,20 +16,21 @@ export const ProductCard = ({ product }) => {
       onClick={() => navigate(`/producto/${product.id}`)}
     >
       <div className="product-image">
-        <img src={product.image} alt={product.name} />
+        <img
+          src={product.image}
+          alt={product.name}
+          width="320"
+          height="320"
+          loading="lazy"
+          decoding="async"
+        />
       </div>
 
       <h3 className="product-name">{product.name}</h3>
 
       <p className="product-price">${product.price}</p>
 
-      <p
-        className={`product-stock ${
-          totalStock > 0 ? "in-stock" : "out-stock"
-        }`}
-      >
-        {totalStock > 0 ? `Stock disponible: ${totalStock}` : "Sin stock"}
-      </p>
+
     </div>
   );
 };

@@ -1,24 +1,29 @@
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useState, useEffect, useMemo } from "react";
 import products from "../data/products.json";
 import "./ProductPage.css";
 import { useCart } from "../components/CartContext";
-import { STOCK_API_URL } from "../config/stockApi";
+import { useStock } from "../components/StockContext";
 
 export const ProductPage = ({ onOpenCart }) => {
   const { id } = useParams();
-  const navigate = useNavigate();
   const product = products.find((p) => p.id === Number(id));
 
   const { addToCart } = useCart();
+  const {
+    loading: loadingAllStock,
+    getProductStock,
+    getVariantStock,
+  } = useStock();
+
+  const isSiliconCase = (product?.name || "")
+    .toLowerCase()
+    .includes("silicon case");
 
   const [selectedModel, setSelectedModel] = useState("");
-  const [currentStock, setCurrentStock] = useState(0);
   const [quantity, setQuantity] = useState(1);
   const [mainImage, setMainImage] = useState(product?.image);
-  const [loadingStock, setLoadingStock] = useState(false);
 
-  // ✅ Galería sin duplicados
   const images = useMemo(() => {
     if (!product) return [];
     return Array.from(
@@ -26,94 +31,104 @@ export const ProductPage = ({ onOpenCart }) => {
     );
   }, [product]);
 
-  // Si el producto cambia (por ruta), actualizar imagen principal
   useEffect(() => {
     setMainImage(product?.image);
     setSelectedModel("");
-    setCurrentStock(0);
     setQuantity(1);
   }, [product?.id]);
 
-  // Helper: pedir stock a la API
-  const fetchStock = async ({ productId, model, color = "Unico" }) => {
-    const url =
-      `${STOCK_API_URL}?action=stock&product_id=${productId}` +
-      `&model=${encodeURIComponent(model)}` +
-      `&color=${encodeURIComponent(color)}`;
-
-    const res = await fetch(url);
-    const data = await res.json();
-    if (!data.ok) return 0;
-    return Number(data.stock || 0);
-  };
-
-  // Stock vivo desde Sheets (solo cuando hay modelo elegido)
-  useEffect(() => {
-    const run = async () => {
-      if (!product) return;
-
-      // Productos sin variantes (si existieran)
-      if (!product.variants) {
-        setCurrentStock(product.stock ?? 0);
-        return;
-      }
-
-      // Con variantes: si no hay modelo, no consultamos
-      if (!selectedModel) {
-        setCurrentStock(0);
-        return;
-      }
-
-      setLoadingStock(true);
-      try {
-        const stock = await fetchStock({
-          productId: product.id,
-          model: selectedModel,
-          color: "Unico",
-        });
-
-        setCurrentStock(stock);
-        setQuantity(1);
-      } catch (err) {
-        console.error("Error consultando stock", err);
-        setCurrentStock(0);
-      } finally {
-        setLoadingStock(false);
-      }
-    };
-
-    run();
-  }, [product, selectedModel]);
-
   if (!product) return <p>Producto no encontrado</p>;
 
+  const productStock = getProductStock(product.id);
+
+  const realModelVariants = useMemo(() => {
+    const variants = Array.isArray(productStock?.variants)
+      ? productStock.variants
+      : [];
+
+    return variants.filter(
+      (v) => String(v.model || "").trim().toLowerCase() !== "unico"
+    );
+  }, [productStock]);
+
+  const needsModel = realModelVariants.length > 0;
+
+  const availableVariants = useMemo(() => {
+    if (!needsModel) return [];
+    return realModelVariants.filter((v) => Number(v.stock || 0) > 0);
+  }, [needsModel, realModelVariants]);
+
+  const selectedVariant = useMemo(() => {
+    if (!needsModel || !selectedModel) return null;
+    return getVariantStock(product.id, selectedModel);
+  }, [needsModel, selectedModel, product.id, getVariantStock]);
+
+  const currentStock = useMemo(() => {
+    if (!product) return 0;
+
+    if (needsModel) {
+      if (!selectedModel) return 0;
+      return Number(selectedVariant?.stock || 0);
+    }
+
+    const unico = getVariantStock(product.id, "Unico");
+    return Number(unico?.stock || 0);
+  }, [product, needsModel, selectedModel, selectedVariant, getVariantStock]);
+
+  const displayPrice = useMemo(() => {
+    const base = product?.price ?? 0;
+
+    if (!isSiliconCase) return base;
+    if (!selectedVariant) return base;
+
+    return selectedVariant.price ?? base;
+  }, [product, isSiliconCase, selectedVariant]);
+
+  useEffect(() => {
+    setQuantity((q) => {
+      if (currentStock <= 0) return 1;
+      return Math.min(q, currentStock);
+    });
+  }, [currentStock]);
+
   const addToCartHandler = () => {
-    if (product.variants && !selectedModel) {
+    if (needsModel && !selectedModel) {
       alert("Seleccioná un modelo.");
       return;
     }
-    if (loadingStock) {
+
+    if (loadingAllStock) {
       alert("Cargando stock... probá en un segundo.");
       return;
     }
-    if (currentStock === 0) {
+
+    if (currentStock <= 0) {
       alert("Sin stock disponible.");
       return;
     }
 
+    if (quantity > currentStock) {
+      setQuantity(Math.min(quantity, currentStock));
+      alert("La cantidad supera el stock disponible.");
+      return;
+    }
+
     addToCart(product, {
-      model: selectedModel || null,
+      model: needsModel ? selectedModel : null,
       quantity,
-      // Si más adelante agregás colores, acá también se manda color
-      // color: selectedColor || "Unico",
+      unitPrice: displayPrice,
     });
 
     if (onOpenCart) onOpenCart();
   };
 
+  const canShowQty =
+    !loadingAllStock &&
+    currentStock > 0 &&
+    (!needsModel || !!selectedModel);
+
   return (
     <div className="product-layout">
-      {/* Galería izquierda */}
       <div className="gallery-column">
         {images.map((img, i) => (
           <img
@@ -122,56 +137,81 @@ export const ProductPage = ({ onOpenCart }) => {
             alt="preview"
             className={`thumb ${mainImage === img ? "active" : ""}`}
             onClick={() => setMainImage(img)}
+            width="80"
+            height="80"
+            loading="lazy"
+            decoding="async"
           />
         ))}
       </div>
 
-      {/* Imagen principal */}
       <div className="main-image-container">
-        <img src={mainImage} alt={product.name} className="main-image" />
+        <img
+          src={mainImage}
+          alt={product.name}
+          className="main-image"
+          width="600"
+          height="600"
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
+        />
       </div>
 
-      {/* Panel derecho */}
       <div className="info-panel">
         <h2 className="title">{product.name.toUpperCase()}</h2>
-        <p className="price">${product.price}</p>
+        <p className="price">${displayPrice}</p>
 
-        {/* Modelo */}
-        {product.variants && (
+        {needsModel && (
           <div className="field">
             <label>Modelo</label>
             <select
               value={selectedModel}
-              onChange={(e) => setSelectedModel(e.target.value)}
+              onChange={(e) => {
+                setSelectedModel(e.target.value);
+                setQuantity(1);
+              }}
+              disabled={loadingAllStock || availableVariants.length === 0}
             >
-              <option value="">Seleccionar modelo</option>
-              {product.variants.map((v) => (
+              <option value="">
+                {loadingAllStock
+                  ? "Cargando modelos..."
+                  : availableVariants.length === 0
+                  ? "Sin modelos con stock"
+                  : "Seleccionar modelo disponible"}
+              </option>
+
+              {availableVariants.map((v) => (
                 <option key={v.model} value={v.model}>
                   {v.model}
                 </option>
               ))}
             </select>
+
+            {isSiliconCase && selectedModel && selectedVariant?.price != null && (
+              <p style={{ marginTop: 6, fontSize: 13, opacity: 0.75 }}>
+                Precio para {selectedModel}: ${displayPrice}
+              </p>
+            )}
           </div>
         )}
 
-        {/* Stock (opcional pero útil para debug) */}
-        {product.variants && selectedModel && (
+        {(!needsModel || selectedModel) && (
           <p style={{ marginTop: "8px", opacity: 0.8 }}>
-            {loadingStock
+            {loadingAllStock
               ? "Cargando stock..."
-              : currentStock > 0
-              ? `Stock disponible: ${currentStock}`
-              : "Sin stock"}
+              : currentStock <= 0
+              ? "Sin stock"
+              : null}
           </p>
         )}
 
-        {/* Cantidad */}
-        {currentStock > 0 && !loadingStock && (
+        {canShowQty && (
           <div className="field">
             <label>Cantidad</label>
             <div className="qty-wrapper">
               <button
-                onClick={() => setQuantity((q) => q - 1)}
+                onClick={() => setQuantity((q) => Math.max(1, q - 1))}
                 disabled={quantity <= 1}
               >
                 −
@@ -180,7 +220,7 @@ export const ProductPage = ({ onOpenCart }) => {
               <span>{quantity}</span>
 
               <button
-                onClick={() => setQuantity((q) => q + 1)}
+                onClick={() => setQuantity((q) => Math.min(currentStock, q + 1))}
                 disabled={quantity >= currentStock}
               >
                 +
@@ -189,21 +229,28 @@ export const ProductPage = ({ onOpenCart }) => {
           </div>
         )}
 
-        {/* Botón agregar */}
         <button
           className="add-btn"
-          disabled={loadingStock || currentStock === 0}
+          disabled={
+            loadingAllStock ||
+            currentStock <= 0 ||
+            (needsModel && !selectedModel) ||
+            quantity > currentStock
+          }
           onClick={addToCartHandler}
         >
-          {loadingStock ? "Cargando..." : "Agregar al carrito"}
+          {loadingAllStock ? "Cargando..." : "Agregar al carrito"}
         </button>
 
-        {/* Descripción */}
         {product.description && (
           <p className="description">{product.description}</p>
         )}
 
-        {/* Acordeones */}
+        <p className="image-note">
+          Las imágenes son ilustrativas. El modelo de iPhone mostrado puede no
+          corresponder al modelo seleccionado.
+        </p>
+
         <details className="accordion">
           <summary>Envíos</summary>
           <p>Envíos a todo el país. Maldonado GRATIS desde $600...</p>

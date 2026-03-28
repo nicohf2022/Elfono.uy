@@ -31,7 +31,13 @@ export const Footer = () => {
 
           <div className="footer-block">
             <h5>Seguinos</h5>
-            <p>Instagram</p>
+            <a
+              href="https://www.instagram.com/elfono.uy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Instagram
+            </a>
           </div>
         </div>
 

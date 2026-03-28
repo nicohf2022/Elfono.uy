@@ -1,10 +1,156 @@
 [
   {
     "id": 1,
-    "category": "fundas",
-    "name": "MagSafe Trasparente",
-    "price": 319,
+    "category": "cargadores",
+    "name": "Power Bank",
+    "price": 960,
+    "isOffer": true,
+    "image": "/assets/powerBank.webp",
+    "gallery": [
+      "/assets/powerBank.webp",
+      "/assets/powerBank1.webp"
+    ],
+    "description": "Power Bank magnético inalámbrico con carga rápida de 15W, compatible con iPhone. Se fija de forma segura al equipo y permite cargar sin cables, de manera práctica y portátil.",
+    "variants": [
+      {
+        "model": "Unico"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "category": "cargadores",
+    "name": "Ficha Cargador",
+    "price": 599,
     "isOffer": false,
+    "image": "/assets/ficha.webp",
+    "gallery": [
+      "/assets/ficha.webp",
+      "/assets/ficha1.webp",
+      "/assets/ficha2.webp"
+    ],
+    "description": "Cargador USB-C de 20W con diseño compacto y eficiente. Permite carga rápida y segura para iPhone y otros dispositivos compatibles, ideal para el uso diario.",
+    "variants": [
+      {
+        "model": "Unico"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "category": "cargadores",
+    "name": "Cable USB-C to Lightning",
+    "price": 379,
+    "isOffer": false,
+    "image": "/assets/Clightning.webp",
+    "gallery": [
+      "/assets/Clightning.webp",
+      "/assets/Clightning1.webp",
+      "/assets/Clightning2.webp"
+    ],
+    "description": "Cable USB-C a Lightning de 1 metro, ideal para carga rápida y transferencia de datos en iPhone y dispositivos compatibles. Diseño resistente y práctico para el uso diario.",
+    "variants": [
+      {
+        "model": "Unico"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "category": "cargadores",
+    "name": "Cable USB-C to C",
+    "price": 389,
+    "isOffer": false,
+    "image": "/assets/USBC.webp",
+    "gallery": [
+      "/assets/USBC.webp",
+      "/assets/USBC1.webp"
+    ],
+    "description": "Cable USB-C a USB-C, ideal para carga rápida y transferencia de datos en dispositivos compatibles. Diseño resistente, conexión estable y uso práctico para el día a día.",
+    "variants": [
+      {
+        "model": "Unico"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "category": "cargadores",
+    "name": "Cable USB",
+    "price": 349,
+    "isOffer": false,
+    "image": "/assets/USB.webp",
+    "gallery": [
+      "/assets/USB.webp",
+      "/assets/USB1.webp"
+    ],
+    "description": "Cable Lightning a USB, ideal para carga y sincronización de iPhone y dispositivos compatibles. Diseño resistente, conexión estable y uso práctico para el día a día.",
+    "variants": [
+      {
+        "model": "Unico"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "category": "cargadores",
+    "name": "MagSafe",
+    "price": 750,
+    "isOffer": false,
+    "image": "/assets/MagSafe.webp",
+    "gallery": [
+      "/assets/MagSafe.webp",
+      "/assets/MagSafe1.webp"
+    ],
+    "description": "Cargador inalámbrico MagSafe, diseñado para iPhone, con alineación magnética precisa que permite una carga rápida, segura y sin cables. Práctico, moderno y fácil de usar.",
+    "variants": [
+      {
+        "model": "Unico"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "category": "accesorios",
+    "name": "Vidrio 3D",
+    "price": 180,
+    "isOffer": false,
+    "image": "/assets/Vidrio.webp",
+    "gallery": [
+      "/assets/Vidrio.webp",
+      "/assets/Vidrio1.webp"
+    ],
+    "description": "Vidrio templado protector, diseñado para proteger la pantalla del celular contra golpes, rayones e impactos. Mantiene la sensibilidad táctil y la claridad de la pantalla, ofreciendo máxima protección sin afectar el uso diario.",
+    "variants": [
+      {
+        "model": "Unico"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "category": "accesorios",
+    "name": "Vidrio AntiEspia",
+    "price": 250,
+    "isOffer": false,
+    "image": "/assets/AntiEspia.webp",
+    "gallery": [
+      "/assets/AntiEspia.webp",
+      "/assets/AntiEspia1.webp"
+    ],
+    "description": "Vidrio templado de privacidad, diseñado para proteger la pantalla del celular contra golpes y rayones, evitando miradas laterales. Mantiene la sensibilidad táctil, es resistente (9H) y permite un uso cómodo y seguro en el día a día.",
+    "variants": [
+      {
+        "model": "Unico"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "category": "fundas",
+    "name": "MagSafe Transparente",
+    "price": 319,
+    "isOffer": true,
     "image": "/assets/trasparente-1.webp",
     "gallery": [
       "/assets/trasparente-1.webp",
@@ -14,25 +160,3680 @@
     "description": "Case MagSafe transparente con protección reforzada.",
     "variants": [
       {
-        "model": "IPhone 11",
-        "color": "Unico",
-        "stock": 3
+        "model": "IPhone 11 pro"
       },
       {
-        "model": "IPhone 11 pro",
-        "color": "Unico",
-        "stock": 0
+        "model": "IPhone 12/ 12 pro"
       },
       {
-        "model": "IPhone 11 pro Max",
-        "color": "Unico",
-        "stock": 4
+        "model": "IPhone 13"
       },
       {
-        "model": "",
-        "color": "Único",
-        "stock": 0
+        "model": "IPhone 13 pro"
+      },
+      {
+        "model": "IPhone 14"
+      },
+      {
+        "model": "IPhone 14 pro"
+      },
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 15 pro"
+      },
+      {
+        "model": "IPhone 16"
+      },
+      {
+        "model": "IPhone 16 pro Max"
       }
     ]
+  },
+  {
+    "id": 10,
+    "category": "fundas",
+    "name": "Glitter Ring MagSafe - Silver",
+    "price": 385,
+    "isOffer": false,
+    "image": "/assets/trasparenteBlanca.webp",
+    "gallery": [
+      "/assets/trasparenteBlanca.webp",
+      "/assets/trasparenteBlanca1.webp",
+      "/assets/trasparenteBlanca2.webp"
+    ],
+    "description": "Case transparente con glitter y aro metálico integrado.\nBrinda protección diaria, mejor agarre y función soporte para mayor comodidad al usar tu iPhone.",
+    "variants": [
+      {
+        "model": "IPhone 13"
+      },
+      {
+        "model": "IPhone 14"
+      },
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 15 pro"
+      },
+      {
+        "model": "IPhone 16"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "category": "fundas",
+    "name": "Glitter Ring MagSafe - Black",
+    "price": 385,
+    "isOffer": false,
+    "image": "/assets/trasparenteNegra.webp",
+    "gallery": [
+      "/assets/trasparenteNegra.webp",
+      "/assets/trasparenteNegra1.webp",
+      "/assets/trasparenteNegra2.webp"
+    ],
+    "description": "Casetransparente con glitter y aro metálico integrado.\nBrinda protección diaria, mejor agarre y función soporte para mayor comodidad al usar tu iPhone.",
+    "variants": [
+      {
+        "model": "IPhone 13"
+      },
+      {
+        "model": "IPhone 14"
+      },
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 15 pro"
+      },
+      {
+        "model": "IPhone 16"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "category": "fundas",
+    "name": "Glitter Ring MagSafe - Purple",
+    "price": 385,
+    "isOffer": false,
+    "image": "/assets/trasparenteVioleta.webp",
+    "gallery": [
+      "/assets/trasparenteVioleta.webp",
+      "/assets/trasparenteVioleta1.webp",
+      "/assets/trasparenteVioleta2.webp"
+    ],
+    "description": "Case transparente con glitter y aro metálico integrado.\nBrinda protección diaria, mejor agarre y función soporte para mayor comodidad al usar tu iPhone.",
+    "variants": [
+      {
+        "model": "IPhone 13"
+      },
+      {
+        "model": "IPhone 14"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "category": "fundas",
+    "name": "Glitter Ring MagSafe - Pink",
+    "price": 385,
+    "isOffer": false,
+    "image": "/assets/trasparenteRosada.webp",
+    "gallery": [
+      "/assets/trasparenteRosada.webp",
+      "/assets/trasparenteRosada1.webp",
+      "/assets/trasparenteRosada2.webp"
+    ],
+    "description": "Case transparente con glitter y aro metálico integrado.\nBrinda protección diaria, mejor agarre y función soporte para mayor comodidad al usar tu iPhone.",
+    "variants": [
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 16"
+      },
+      {
+        "model": "IPhone 16 pro"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "category": "fundas",
+    "name": "Case Transparente Antigolpes",
+    "price": 379,
+    "isOffer": false,
+    "image": "/assets/CaseTraspa.webp",
+    "gallery": [
+      "/assets/CaseTraspa.webp",
+      "/assets/CaseTraspa1.webp"
+    ],
+    "description": "Case transparente de ajuste preciso que protege tu iPhone sin ocultar su diseño.\nCuenta con bordes reforzados para absorber impactos, recortes exactos para cámara y botones, y un perfil delgado ideal para el uso diario.",
+    "variants": [
+      {
+        "model": "IPhone 11"
+      },
+      {
+        "model": "IPhone 11 pro"
+      },
+      {
+        "model": "IPhone 12/ 12 pro"
+      },
+      {
+        "model": "IPhone 13 pro"
+      },
+      {
+        "model": "IPhone 14"
+      },
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 15 pro"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "category": "fundas",
+    "name": "Border Color Case - Blue",
+    "price": 319,
+    "isOffer": false,
+    "image": "/assets/bordeAzul.webp",
+    "gallery": [
+      "/assets/bordeAzul.webp",
+      "/assets/bordeColor.webp"
+    ],
+    "description": "Case transparente con borde de color que protege tu iPhone sin ocultar su diseño.\nLiviana, resistente y con ajuste preciso, ideal para el uso diario y disponible en varios colores.",
+    "variants": [
+      {
+        "model": "IPhone 13"
+      },
+      {
+        "model": "IPhone 14"
+      },
+      {
+        "model": "IPhone 13 pro"
+      },
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 15 pro"
+      },
+      {
+        "model": "IPhone 13 pro Max"
+      },
+      {
+        "model": "IPhone 14 pro Max"
+      },
+      {
+        "model": "IPhone 14 pro"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "category": "fundas",
+    "name": "Border Color Case - Black",
+    "price": 319,
+    "isOffer": false,
+    "image": "/assets/bordeNegro.webp",
+    "gallery": [
+      "/assets/bordeNegro.webp",
+      "/assets/bordeColor.webp"
+    ],
+    "description": "Case transparente con borde de color que protege tu iPhone sin ocultar su diseño.\nLiviana, resistente y con ajuste preciso, ideal para el uso diario y disponible en varios colores.",
+    "variants": [
+      {
+        "model": "IPhone 13"
+      },
+      {
+        "model": "IPhone 14"
+      },
+      {
+        "model": "IPhone 13 pro"
+      },
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 13 pro Max"
+      },
+      {
+        "model": "IPhone 14 pro Max"
+      },
+      {
+        "model": "IPhone 14 pro"
+      },
+      {
+        "model": "IPhone 15 pro Max"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "category": "fundas",
+    "name": "Border Color Case - Pink",
+    "price": 319,
+    "isOffer": false,
+    "image": "/assets/bordePiel.webp",
+    "gallery": [
+      "/assets/bordePiel.webp",
+      "/assets/bordeColor.webp"
+    ],
+    "description": "Case transparente con borde de color que protege tu iPhone sin ocultar su diseño.\nLiviana, resistente y con ajuste preciso, ideal para el uso diario y disponible en varios colores.",
+    "variants": [
+      {
+        "model": "IPhone 15 pro"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "category": "fundas",
+    "name": "Border Color Case - Purple",
+    "price": 319,
+    "isOffer": false,
+    "image": "/assets/bordeVioleta.webp",
+    "gallery": [
+      "/assets/bordeVioleta.webp",
+      "/assets/bordeColor.webp"
+    ],
+    "description": "Case  transparente con borde de color que protege tu iPhone sin ocultar su diseño.\nLiviana, resistente y con ajuste preciso, ideal para el uso diario y disponible en varios colores.",
+    "variants": [
+      {
+        "model": "IPhone 13"
+      },
+      {
+        "model": "IPhone 14"
+      },
+      {
+        "model": "IPhone 13 pro"
+      },
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 13 pro Max"
+      },
+      {
+        "model": "IPhone 14 pro Max"
+      },
+      {
+        "model": "IPhone 15 pro Max"
+      },
+      {
+        "model": "IPhone 14 pro"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "category": "accesorios",
+    "name": "Ventosa Antideslizante",
+    "price": 180,
+    "isOffer": false,
+    "image": "/assets/ventosa1.webp",
+    "gallery": [
+      "/assets/ventosa1.webp",
+      "/assets/ventosa.webp"
+    ],
+    "description": "Ventosa adhesiva de silicona para colocar en la parte trasera de la funda. Permite fijar el celular a superficies lisas y usarlo sin manos de forma práctica y segura.",
+    "variants": [
+      {
+        "model": "Unico"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "category": "fundas",
+    "name": "Case Ventosa - Roja",
+    "price": 329,
+    "isOffer": false,
+    "image": "/assets/ventosaRoja.webp",
+    "gallery": [
+      "/assets/ventosaRoja.webp",
+      "/assets/Casesventosa.webp"
+    ],
+    "description": "Case con ventosas traseras que permite adherir el celular a superficies lisas como vidrios, espejos o azulejos. Fabricada en silicona flexible, ofrece buen agarre, protección contra golpes y un uso práctico para grabar contenido, videollamadas o apoyar el teléfono sin manos.",
+    "variants": []
+  },
+  {
+    "id": 22,
+    "category": "fundas",
+    "name": "Case Ventosa - Violeta",
+    "price": 329,
+    "isOffer": false,
+    "image": "/assets/ventosaVioleta.webp",
+    "gallery": [
+      "/assets/ventosaVioleta.webp",
+      "/assets/Casesventosa.webp"
+    ],
+    "description": "Case con ventosas traseras que permite adherir el celular a superficies lisas como vidrios, espejos o azulejos. Fabricada en silicona flexible, ofrece buen agarre, protección contra golpes y un uso práctico para grabar contenido, videollamadas o apoyar el teléfono sin manos.",
+    "variants": []
+  },
+  {
+    "id": 23,
+    "category": "fundas",
+    "name": "Case Ventosa - Negra",
+    "price": 329,
+    "isOffer": false,
+    "image": "/assets/ventosaNegra.webp",
+    "gallery": [
+      "/assets/ventosaNegra.webp",
+      "/assets/Casesventosa.webp"
+    ],
+    "description": "Case con ventosas traseras que permite adherir el celular a superficies lisas como vidrios, espejos o azulejos. Fabricada en silicona flexible, ofrece buen agarre, protección contra golpes y un uso práctico para grabar contenido, videollamadas o apoyar el teléfono sin manos.",
+    "variants": []
+  },
+  {
+    "id": 24,
+    "category": "fundas",
+    "name": "Case Ventosa - Rosa",
+    "price": 329,
+    "isOffer": false,
+    "image": "/assets/ventosaRosada.webp",
+    "gallery": [
+      "/assets/ventosaRosada.webp",
+      "/assets/Casesventosa.webp"
+    ],
+    "description": "Case con ventosas traseras que permite adherir el celular a superficies lisas como vidrios, espejos o azulejos. Fabricada en silicona flexible, ofrece buen agarre, protección contra golpes y un uso práctico para grabar contenido, videollamadas o apoyar el teléfono sin manos.",
+    "variants": []
+  },
+  {
+    "id": 25,
+    "category": "fundas",
+    "name": "Case Ventosa - Fucsia",
+    "price": 329,
+    "isOffer": false,
+    "image": "/assets/ventosaFuccia.webp",
+    "gallery": [
+      "/assets/ventosaFuccia.webp",
+      "/assets/Casesventosa.webp"
+    ],
+    "description": "Case con ventosas traseras que permite adherir el celular a superficies lisas como vidrios, espejos o azulejos. Fabricada en silicona flexible, ofrece buen agarre, protección contra golpes y un uso práctico para grabar contenido, videollamadas o apoyar el teléfono sin manos.",
+    "variants": []
+  },
+  {
+    "id": 26,
+    "category": "fundas",
+    "name": "Case Fibra de Carbono - Carbon Navy",
+    "price": 385,
+    "isOffer": false,
+    "image": "/assets/carbonoAzul.webp",
+    "gallery": [
+      "/assets/carbonoAzul.webp",
+      "/assets/Carbono.webp"
+    ],
+    "description": "Case de estética elegante y minimalista, con acabado tipo fibra de carbono y compatibilidad MagSafe. Su diseño delgado y sofisticado protege el iPhone sin perder estilo, incorporando un aro metálico que realza la cámara y aporta un toque premium en cada detalle.",
+    "variants": [
+      {
+        "model": "IPhone 15"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "category": "fundas",
+    "name": "Case Fibra de Carbono - Carbon Black",
+    "price": 385,
+    "isOffer": false,
+    "image": "/assets/carbonoNegra.webp",
+    "gallery": [
+      "/assets/carbonoAzul.webp",
+      "/assets/Carbono.webp"
+    ],
+    "description": "Case de estética elegante y minimalista, con acabado tipo fibra de carbono y compatibilidad MagSafe. Su diseño delgado y sofisticado protege el iPhone sin perder estilo, incorporando un aro metálico que realza la cámara y aporta un toque premium en cada detalle.",
+    "variants": [
+      {
+        "model": "IPhone 14 pro"
+      },
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 15 pro"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "category": "fundas",
+    "name": "Case Fibra de Carbono - Diagonal Bicolor",
+    "price": 385,
+    "isOffer": false,
+    "image": "/assets/carbonoGriNe.webp",
+    "gallery": [
+      "/assets/carbonoAzul.webp",
+      "/assets/Carbono.webp"
+    ],
+    "description": "Case de estética elegante y minimalista, con acabado tipo fibra de carbono y compatibilidad MagSafe. Su diseño delgado y sofisticado protege el iPhone sin perder estilo, incorporando un aro metálico que realza la cámara y aporta un toque premium en cada detalle.",
+    "variants": [
+      {
+        "model": "IPhone 15 pro"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "category": "fundas",
+    "name": "Case Fibra de Carbono - Carbon White",
+    "price": 385,
+    "isOffer": false,
+    "image": "/assets/carbonoBlanca.webp",
+    "gallery": [
+      "/assets/carbonoAzul.webp",
+      "/assets/Carbono.webp"
+    ],
+    "description": "Case de estética elegante y minimalista, con acabado tipo fibra de carbono y compatibilidad MagSafe. Su diseño delgado y sofisticado protege el iPhone sin perder estilo, incorporando un aro metálico que realza la cámara y aporta un toque premium en cada detalle.",
+    "variants": [
+      {
+        "model": "IPhone 16"
+      },
+      {
+        "model": "IPhone 16 pro"
+      },
+      {
+        "model": "IPhone 16 E"
+      },
+      {
+        "model": "IPhone 14 pro"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "category": "fundas",
+    "name": "Case Fibra de Carbono - Carbon Racing",
+    "price": 385,
+    "isOffer": false,
+    "image": "/assets/carbonoMulti.webp",
+    "gallery": [
+      "/assets/carbonoMulti.webp",
+      "/assets/Carbono.webp"
+    ],
+    "description": "Case de estética elegante y minimalista, con acabado tipo fibra de carbono y compatibilidad MagSafe. Su diseño delgado y sofisticado protege el iPhone sin perder estilo, incorporando un aro metálico que realza la cámara y aporta un toque premium en cada detalle.",
+    "variants": [
+      {
+        "model": "IPhone 14 pro"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "category": "fundas",
+    "name": "Case Fibra de Carbono - Carbon Silver",
+    "price": 385,
+    "isOffer": false,
+    "image": "/assets/carbonoGris.webp",
+    "gallery": [
+      "/assets/carbonoMulti.webp",
+      "/assets/Carbono.webp"
+    ],
+    "description": "Case de estética elegante y minimalista, con acabado tipo fibra de carbono y compatibilidad MagSafe. Su diseño delgado y sofisticado protege el iPhone sin perder estilo, incorporando un aro metálico que realza la cámara y aporta un toque premium en cada detalle.",
+    "variants": [
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 15 pro"
+      },
+      {
+        "model": "IPhone 16"
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "category": "fundas",
+    "name": "Case MagSafe Crystal - Violeta",
+    "price": 339,
+    "isOffer": false,
+    "image": "/assets/crystalVioleta.webp",
+    "gallery": [
+      "/assets/crystalVioleta.webp",
+      "/assets/crystalColor.webp"
+    ],
+    "description": "Case flexible compatible con MagSafe que protege tu iPhone con un diseño moderno y elegante e incluye protector individual de cámaras para mayor seguridad frente a golpes y rayones.",
+    "variants": [
+      {
+        "model": "IPhone 13"
+      },
+      {
+        "model": "IPhone 14 pro"
+      },
+      {
+        "model": "IPhone 15 pro"
+      },
+      {
+        "model": "IPhone 16 pro"
+      },
+      {
+        "model": "IPhone 16 pro Max"
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "category": "fundas",
+    "name": "Case MagSafe Crystal - Rosa",
+    "price": 339,
+    "isOffer": false,
+    "image": "/assets/crystalRosa.webp",
+    "gallery": [
+      "/assets/crystalRosa.webp",
+      "/assets/crystalColor.webp"
+    ],
+    "description": "Case flexible compatible con MagSafe que protege tu iPhone con un diseño moderno y elegante e incluye protector individual de cámaras para mayor seguridad frente a golpes y rayones.",
+    "variants": [
+      {
+        "model": "IPhone 15 pro"
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "category": "fundas",
+    "name": "Case MagSafe Crystal - Negro",
+    "price": 339,
+    "isOffer": false,
+    "image": "/assets/crystalNegra.webp",
+    "gallery": [
+      "/assets/crystalNegra.webp",
+      "/assets/crystalColor.webp"
+    ],
+    "description": "Case flexible compatible con MagSafe que protege tu iPhone con un diseño moderno y elegante e incluye protector individual de cámaras para mayor seguridad frente a golpes y rayones.",
+    "variants": [
+      {
+        "model": "IPhone 15 pro"
+      },
+      {
+        "model": "IPhone 16 pro"
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "category": "fundas",
+    "name": "Case MagSafe Crystal - Amarilla",
+    "price": 339,
+    "isOffer": false,
+    "image": "/assets/crystalPiel.webp",
+    "gallery": [
+      "/assets/crystalPiel.webp",
+      "/assets/crystalColor.webp"
+    ],
+    "description": "Case flexible compatible con MagSafe que protege tu iPhone con un diseño moderno y elegante e incluye protector individual de cámaras para mayor seguridad frente a golpes y rayones.",
+    "variants": [
+      {
+        "model": "IPhone 14 pro"
+      },
+      {
+        "model": "IPhone 16"
+      },
+      {
+        "model": "IPhone 16 E"
+      },
+      {
+        "model": "IPhone 16 pro Max"
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "category": "fundas",
+    "name": "Case MagSafe Crystal - Gris",
+    "price": 339,
+    "isOffer": false,
+    "image": "/assets/crystalGris.webp",
+    "gallery": [
+      "/assets/crystalGris.webp",
+      "/assets/crystalColor.webp"
+    ],
+    "description": "Case flexible compatible con MagSafe que protege tu iPhone con un diseño moderno y elegante e incluye protector individual de cámaras para mayor seguridad frente a golpes y rayones.",
+    "variants": [
+      {
+        "model": "IPhone 13"
+      },
+      {
+        "model": "IPhone 16"
+      },
+      {
+        "model": "IPhone 16 E"
+      },
+      {
+        "model": "IPhone 16 pro Max"
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "category": "fundas",
+    "name": "Case MagSafe Crystal - Mostaza",
+    "price": 339,
+    "isOffer": false,
+    "image": "/assets/crystalDorada.webp",
+    "gallery": [
+      "/assets/crystalDorada.webp",
+      "/assets/crystalColor.webp"
+    ],
+    "description": "Case flexible compatible con MagSafe que protege tu iPhone con un diseño moderno y elegante e incluye protector individual de cámaras para mayor seguridad frente a golpes y rayones.",
+    "variants": [
+      {
+        "model": "IPhone 13"
+      },
+      {
+        "model": "IPhone 14 pro"
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "category": "fundas",
+    "name": "Silicon Case - Malva",
+    "price": 290,
+    "isOffer": false,
+    "image": "/assets/siliconMalva.webp",
+    "gallery": [
+      "/assets/siliconMalva.webp",
+      "/assets/siliconColor.webp"
+    ],
+    "description": "Funda silicon case con acabado suave al tacto y diseño minimalista que protege tu iPhone contra golpes y rayones ofreciendo un ajuste preciso, interior aterciopelado y variedad de colores modernos para combinar estilo y protección en el uso diario.",
+    "variants": [
+      {
+        "model": "IPhone 11"
+      },
+      {
+        "model": "IPhone 11 pro"
+      },
+      {
+        "model": "IPhone 11 pro Max"
+      },
+      {
+        "model": "IPhone 12/ 12 pro"
+      },
+      {
+        "model": "IPhone 12 mini"
+      },
+      {
+        "model": "IPhone 12 pro Max"
+      },
+      {
+        "model": "IPhone 13"
+      },
+      {
+        "model": "IPhone 13 mini"
+      },
+      {
+        "model": "IPhone 13 pro"
+      },
+      {
+        "model": "IPhone 13 pro Max"
+      },
+      {
+        "model": "IPhone 14"
+      },
+      {
+        "model": "IPhone 14 pro"
+      },
+      {
+        "model": "IPhone 14 Plus"
+      },
+      {
+        "model": "IPhone 14 pro Max"
+      },
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 15 Plus"
+      },
+      {
+        "model": "IPhone 15 pro"
+      },
+      {
+        "model": "IPhone 15 pro Max"
+      },
+      {
+        "model": "IPhone 16 Plus"
+      },
+      {
+        "model": "IPhone 16"
+      },
+      {
+        "model": "IPhone 16 E"
+      },
+      {
+        "model": "IPhone 16 pro"
+      },
+      {
+        "model": "IPhone 16 pro Max"
+      },
+      {
+        "model": "IPhone 17 Air"
+      },
+      {
+        "model": "IPhone 17 pro"
+      },
+      {
+        "model": "IPhone 17"
+      },
+      {
+        "model": "IPhone 17 pro Max"
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "category": "fundas",
+    "name": "Silicon Case - Gris Plomo",
+    "price": 290,
+    "isOffer": false,
+    "image": "/assets/siliconGrisPlomo.webp",
+    "gallery": [
+      "/assets/siliconGrisPlomo.webp",
+      "/assets/siliconColor.webp"
+    ],
+    "description": "Funda silicon case con acabado suave al tacto y diseño minimalista que protege tu iPhone contra golpes y rayones ofreciendo un ajuste preciso, interior aterciopelado y variedad de colores modernos para combinar estilo y protección en el uso diario.",
+    "variants": [
+      {
+        "model": "IPhone 11"
+      },
+      {
+        "model": "IPhone 11 pro"
+      },
+      {
+        "model": "IPhone 11 pro Max"
+      },
+      {
+        "model": "IPhone 12/ 12 pro"
+      },
+      {
+        "model": "IPhone 12 mini"
+      },
+      {
+        "model": "IPhone 12 pro Max"
+      },
+      {
+        "model": "IPhone 13"
+      },
+      {
+        "model": "IPhone 13 mini"
+      },
+      {
+        "model": "IPhone 13 pro"
+      },
+      {
+        "model": "IPhone 13 pro Max"
+      },
+      {
+        "model": "IPhone 14"
+      },
+      {
+        "model": "IPhone 14 pro"
+      },
+      {
+        "model": "IPhone 14 Plus"
+      },
+      {
+        "model": "IPhone 14 pro Max"
+      },
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 15 Plus"
+      },
+      {
+        "model": "IPhone 15 pro"
+      },
+      {
+        "model": "IPhone 15 pro Max"
+      },
+      {
+        "model": "IPhone 16 Plus"
+      },
+      {
+        "model": "IPhone 16"
+      },
+      {
+        "model": "IPhone 16 E"
+      },
+      {
+        "model": "IPhone 16 pro"
+      },
+      {
+        "model": "IPhone 16 pro Max"
+      },
+      {
+        "model": "IPhone 17 Air"
+      },
+      {
+        "model": "IPhone 17 pro"
+      },
+      {
+        "model": "IPhone 17"
+      },
+      {
+        "model": "IPhone 17 pro Max"
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "category": "fundas",
+    "name": "Silicon Case - Lavanda",
+    "price": 290,
+    "isOffer": false,
+    "image": "/assets/siliconLavanda.webp",
+    "gallery": [
+      "/assets/siliconLavanda.webp",
+      "/assets/siliconColor.webp"
+    ],
+    "description": "Funda silicon case con acabado suave al tacto y diseño minimalista que protege tu iPhone contra golpes y rayones ofreciendo un ajuste preciso, interior aterciopelado y variedad de colores modernos para combinar estilo y protección en el uso diario.",
+    "variants": [
+      {
+        "model": "IPhone 11"
+      },
+      {
+        "model": "IPhone 11 pro"
+      },
+      {
+        "model": "IPhone 11 pro Max"
+      },
+      {
+        "model": "IPhone 12/ 12 pro"
+      },
+      {
+        "model": "IPhone 12 mini"
+      },
+      {
+        "model": "IPhone 12 pro Max"
+      },
+      {
+        "model": "IPhone 13"
+      },
+      {
+        "model": "IPhone 13 mini"
+      },
+      {
+        "model": "IPhone 13 pro"
+      },
+      {
+        "model": "IPhone 13 pro Max"
+      },
+      {
+        "model": "IPhone 14"
+      },
+      {
+        "model": "IPhone 14 pro"
+      },
+      {
+        "model": "IPhone 14 Plus"
+      },
+      {
+        "model": "IPhone 14 pro Max"
+      },
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 15 Plus"
+      },
+      {
+        "model": "IPhone 15 pro"
+      },
+      {
+        "model": "IPhone 15 pro Max"
+      },
+      {
+        "model": "IPhone 16 Plus"
+      },
+      {
+        "model": "IPhone 16"
+      },
+      {
+        "model": "IPhone 16 E"
+      },
+      {
+        "model": "IPhone 16 pro"
+      },
+      {
+        "model": "IPhone 16 pro Max"
+      },
+      {
+        "model": "IPhone 17 Air"
+      },
+      {
+        "model": "IPhone 17 pro"
+      },
+      {
+        "model": "IPhone 17"
+      },
+      {
+        "model": "IPhone 17 pro Max"
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "category": "fundas",
+    "name": "Silicon Case - Rosa Pastel",
+    "price": 290,
+    "isOffer": false,
+    "image": "/assets/siliconRosaPastel.webp",
+    "gallery": [
+      "/assets/siliconRosaPastel.webp",
+      "/assets/siliconColor.webp"
+    ],
+    "description": "Funda silicon case con acabado suave al tacto y diseño minimalista que protege tu iPhone contra golpes y rayones ofreciendo un ajuste preciso, interior aterciopelado y variedad de colores modernos para combinar estilo y protección en el uso diario.",
+    "variants": [
+      {
+        "model": "IPhone 11"
+      },
+      {
+        "model": "IPhone 11 pro"
+      },
+      {
+        "model": "IPhone 11 pro Max"
+      },
+      {
+        "model": "IPhone 12/ 12 pro"
+      },
+      {
+        "model": "IPhone 12 mini"
+      },
+      {
+        "model": "IPhone 12 pro Max"
+      },
+      {
+        "model": "IPhone 13"
+      },
+      {
+        "model": "IPhone 13 mini"
+      },
+      {
+        "model": "IPhone 13 pro"
+      },
+      {
+        "model": "IPhone 13 pro Max"
+      },
+      {
+        "model": "IPhone 14"
+      },
+      {
+        "model": "IPhone 14 pro"
+      },
+      {
+        "model": "IPhone 14 Plus"
+      },
+      {
+        "model": "IPhone 14 pro Max"
+      },
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 15 Plus"
+      },
+      {
+        "model": "IPhone 15 pro"
+      },
+      {
+        "model": "IPhone 15 pro Max"
+      },
+      {
+        "model": "IPhone 16 Plus"
+      },
+      {
+        "model": "IPhone 16"
+      },
+      {
+        "model": "IPhone 16 E"
+      },
+      {
+        "model": "IPhone 16 pro"
+      },
+      {
+        "model": "IPhone 16 pro Max"
+      },
+      {
+        "model": "IPhone 17 Air"
+      },
+      {
+        "model": "IPhone 17 pro"
+      },
+      {
+        "model": "IPhone 17"
+      },
+      {
+        "model": "IPhone 17 pro Max"
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "category": "fundas",
+    "name": "Silicon Case - Negro",
+    "price": 290,
+    "isOffer": false,
+    "image": "/assets/siliconNegra.webp",
+    "gallery": [
+      "/assets/siliconNegra.webp",
+      "/assets/siliconColor.webp"
+    ],
+    "description": "Funda silicon case con acabado suave al tacto y diseño minimalista que protege tu iPhone contra golpes y rayones ofreciendo un ajuste preciso, interior aterciopelado y variedad de colores modernos para combinar estilo y protección en el uso diario.",
+    "variants": [
+      {
+        "model": "IPhone 11"
+      },
+      {
+        "model": "IPhone 11 pro"
+      },
+      {
+        "model": "IPhone 11 pro Max"
+      },
+      {
+        "model": "IPhone 12/ 12 pro"
+      },
+      {
+        "model": "IPhone 12 mini"
+      },
+      {
+        "model": "IPhone 12 pro Max"
+      },
+      {
+        "model": "IPhone 13"
+      },
+      {
+        "model": "IPhone 13 mini"
+      },
+      {
+        "model": "IPhone 13 pro"
+      },
+      {
+        "model": "IPhone 13 pro Max"
+      },
+      {
+        "model": "IPhone 14"
+      },
+      {
+        "model": "IPhone 14 pro"
+      },
+      {
+        "model": "IPhone 14 Plus"
+      },
+      {
+        "model": "IPhone 14 pro Max"
+      },
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 15 Plus"
+      },
+      {
+        "model": "IPhone 15 pro"
+      },
+      {
+        "model": "IPhone 15 pro Max"
+      },
+      {
+        "model": "IPhone 16 Plus"
+      },
+      {
+        "model": "IPhone 16"
+      },
+      {
+        "model": "IPhone 16 E"
+      },
+      {
+        "model": "IPhone 16 pro"
+      },
+      {
+        "model": "IPhone 16 pro Max"
+      },
+      {
+        "model": "IPhone 17 Air"
+      },
+      {
+        "model": "IPhone 17 pro"
+      },
+      {
+        "model": "IPhone 17"
+      },
+      {
+        "model": "IPhone 17 pro Max"
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "category": "fundas",
+    "name": "Silicon Case - Azul Navy",
+    "price": 290,
+    "isOffer": false,
+    "image": "/assets/siliconAzulNavy.webp",
+    "gallery": [
+      "/assets/siliconAzulNavy.webp",
+      "/assets/siliconColor.webp"
+    ],
+    "description": "Funda silicon case con acabado suave al tacto y diseño minimalista que protege tu iPhone contra golpes y rayones ofreciendo un ajuste preciso, interior aterciopelado y variedad de colores modernos para combinar estilo y protección en el uso diario.",
+    "variants": [
+      {
+        "model": "IPhone 11"
+      },
+      {
+        "model": "IPhone 11 pro"
+      },
+      {
+        "model": "IPhone 11 pro Max"
+      },
+      {
+        "model": "IPhone 12 mini"
+      },
+      {
+        "model": "IPhone 12/ 12 pro"
+      },
+      {
+        "model": "IPhone 12 pro Max"
+      },
+      {
+        "model": "IPhone 13"
+      },
+      {
+        "model": "IPhone 13 mini"
+      },
+      {
+        "model": "IPhone 13 pro"
+      },
+      {
+        "model": "IPhone 13 pro Max"
+      },
+      {
+        "model": "IPhone 14"
+      },
+      {
+        "model": "IPhone 14 pro"
+      },
+      {
+        "model": "IPhone 14 Plus"
+      },
+      {
+        "model": "IPhone 14 pro Max"
+      },
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 15 Plus"
+      },
+      {
+        "model": "IPhone 15 pro"
+      },
+      {
+        "model": "IPhone 15 pro Max"
+      },
+      {
+        "model": "IPhone 16 Plus"
+      },
+      {
+        "model": "IPhone 16"
+      },
+      {
+        "model": "IPhone 16 E"
+      },
+      {
+        "model": "IPhone 16 pro"
+      },
+      {
+        "model": "IPhone 16 pro Max"
+      },
+      {
+        "model": "IPhone 17 Air"
+      },
+      {
+        "model": "IPhone 17 pro"
+      },
+      {
+        "model": "IPhone 17"
+      },
+      {
+        "model": "IPhone 17 pro Max"
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "category": "fundas",
+    "name": "Silicon Case - Blanco",
+    "price": 290,
+    "isOffer": false,
+    "image": "/assets/siliconBlanca.webp",
+    "gallery": [
+      "/assets/siliconBlanca.webp",
+      "/assets/siliconColor.webp"
+    ],
+    "description": "Funda silicon case con acabado suave al tacto y diseño minimalista que protege tu iPhone contra golpes y rayones ofreciendo un ajuste preciso, interior aterciopelado y variedad de colores modernos para combinar estilo y protección en el uso diario.",
+    "variants": [
+      {
+        "model": "IPhone 11"
+      },
+      {
+        "model": "IPhone 11 pro"
+      },
+      {
+        "model": "IPhone 11 pro Max"
+      },
+      {
+        "model": "IPhone 12/ 12 pro"
+      },
+      {
+        "model": "IPhone 12 mini"
+      },
+      {
+        "model": "IPhone 12 pro Max"
+      },
+      {
+        "model": "IPhone 13"
+      },
+      {
+        "model": "IPhone 13 mini"
+      },
+      {
+        "model": "IPhone 13 pro"
+      },
+      {
+        "model": "IPhone 13 pro Max"
+      },
+      {
+        "model": "IPhone 14"
+      },
+      {
+        "model": "IPhone 14 pro"
+      },
+      {
+        "model": "IPhone 14 Plus"
+      },
+      {
+        "model": "IPhone 14 pro Max"
+      },
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 15 Plus"
+      },
+      {
+        "model": "IPhone 15 pro"
+      },
+      {
+        "model": "IPhone 15 pro Max"
+      },
+      {
+        "model": "IPhone 16 Plus"
+      },
+      {
+        "model": "IPhone 16"
+      },
+      {
+        "model": "IPhone 16 E"
+      },
+      {
+        "model": "IPhone 16 pro"
+      },
+      {
+        "model": "IPhone 16 pro Max"
+      },
+      {
+        "model": "IPhone 17 Air"
+      },
+      {
+        "model": "IPhone 17 pro"
+      },
+      {
+        "model": "IPhone 17"
+      },
+      {
+        "model": "IPhone 17 pro Max"
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "category": "fundas",
+    "name": "Silicon Case - Amarillo Pastel",
+    "price": 290,
+    "isOffer": false,
+    "image": "/assets/siliconAmarilloPastel.webp",
+    "gallery": [
+      "/assets/siliconAmarilloPastel.webp",
+      "/assets/siliconColor.webp"
+    ],
+    "description": "Funda silicon case con acabado suave al tacto y diseño minimalista que protege tu iPhone contra golpes y rayones ofreciendo un ajuste preciso, interior aterciopelado y variedad de colores modernos para combinar estilo y protección en el uso diario.",
+    "variants": [
+      {
+        "model": "IPhone 11"
+      },
+      {
+        "model": "IPhone 11 pro"
+      },
+      {
+        "model": "IPhone 11 pro Max"
+      },
+      {
+        "model": "IPhone 12/ 12 pro"
+      },
+      {
+        "model": "IPhone 12 mini"
+      },
+      {
+        "model": "IPhone 12 pro Max"
+      },
+      {
+        "model": "IPhone 13"
+      },
+      {
+        "model": "IPhone 13 mini"
+      },
+      {
+        "model": "IPhone 13 pro"
+      },
+      {
+        "model": "IPhone 13 pro Max"
+      },
+      {
+        "model": "IPhone 14"
+      },
+      {
+        "model": "IPhone 14 pro"
+      },
+      {
+        "model": "IPhone 14 Plus"
+      },
+      {
+        "model": "IPhone 14 pro Max"
+      },
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 15 Plus"
+      },
+      {
+        "model": "IPhone 15 pro"
+      },
+      {
+        "model": "IPhone 15 pro Max"
+      },
+      {
+        "model": "IPhone 16 Plus"
+      },
+      {
+        "model": "IPhone 16"
+      },
+      {
+        "model": "IPhone 16 E"
+      },
+      {
+        "model": "IPhone 16 pro"
+      },
+      {
+        "model": "IPhone 16 pro Max"
+      },
+      {
+        "model": "IPhone 17 Air"
+      },
+      {
+        "model": "IPhone 17 pro"
+      },
+      {
+        "model": "IPhone 17"
+      },
+      {
+        "model": "IPhone 17 pro Max"
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "category": "fundas",
+    "name": "Silicon Case - Verde Militar",
+    "price": 290,
+    "isOffer": false,
+    "image": "/assets/siliconVerdeMilitar.webp",
+    "gallery": [
+      "/assets/siliconVerdeMilitar.webp",
+      "/assets/siliconColor.webp"
+    ],
+    "description": "Funda silicon case con acabado suave al tacto y diseño minimalista que protege tu iPhone contra golpes y rayones ofreciendo un ajuste preciso, interior aterciopelado y variedad de colores modernos para combinar estilo y protección en el uso diario.",
+    "variants": [
+      {
+        "model": "IPhone 11"
+      },
+      {
+        "model": "IPhone 11 pro"
+      },
+      {
+        "model": "IPhone 11 pro Max"
+      },
+      {
+        "model": "IPhone 12/ 12 pro"
+      },
+      {
+        "model": "IPhone 12 mini"
+      },
+      {
+        "model": "IPhone 12 pro Max"
+      },
+      {
+        "model": "IPhone 13"
+      },
+      {
+        "model": "IPhone 13 mini"
+      },
+      {
+        "model": "IPhone 13 pro"
+      },
+      {
+        "model": "IPhone 13 pro Max"
+      },
+      {
+        "model": "IPhone 14"
+      },
+      {
+        "model": "IPhone 14 pro"
+      },
+      {
+        "model": "IPhone 14 Plus"
+      },
+      {
+        "model": "IPhone 14 pro Max"
+      },
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 15 Plus"
+      },
+      {
+        "model": "IPhone 15 pro"
+      },
+      {
+        "model": "IPhone 15 pro Max"
+      },
+      {
+        "model": "IPhone 16 Plus"
+      },
+      {
+        "model": "IPhone 16"
+      },
+      {
+        "model": "IPhone 16 E"
+      },
+      {
+        "model": "IPhone 16 pro"
+      },
+      {
+        "model": "IPhone 16 pro Max"
+      },
+      {
+        "model": "IPhone 17 Air"
+      },
+      {
+        "model": "IPhone 17 pro"
+      },
+      {
+        "model": "IPhone 17"
+      },
+      {
+        "model": "IPhone 17 pro Max"
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "category": "fundas",
+    "name": "Silicon Case - Verde Salvia",
+    "price": 290,
+    "isOffer": false,
+    "image": "/assets/siliconVerdeSalvia.webp",
+    "gallery": [
+      "/assets/siliconVerdeSalvia.webp",
+      "/assets/siliconColor.webp"
+    ],
+    "description": "Funda silicon case con acabado suave al tacto y diseño minimalista que protege tu iPhone contra golpes y rayones ofreciendo un ajuste preciso, interior aterciopelado y variedad de colores modernos para combinar estilo y protección en el uso diario.",
+    "variants": [
+      {
+        "model": "IPhone 11"
+      },
+      {
+        "model": "IPhone 11 pro"
+      },
+      {
+        "model": "IPhone 11 pro Max"
+      },
+      {
+        "model": "IPhone 12/ 12 pro"
+      },
+      {
+        "model": "IPhone 12 mini"
+      },
+      {
+        "model": "IPhone 12 pro Max"
+      },
+      {
+        "model": "IPhone 13"
+      },
+      {
+        "model": "IPhone 13 mini"
+      },
+      {
+        "model": "IPhone 13 pro"
+      },
+      {
+        "model": "IPhone 13 pro Max"
+      },
+      {
+        "model": "IPhone 14"
+      },
+      {
+        "model": "IPhone 14 pro"
+      },
+      {
+        "model": "IPhone 14 Plus"
+      },
+      {
+        "model": "IPhone 14 pro Max"
+      },
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 15 Plus"
+      },
+      {
+        "model": "IPhone 15 pro"
+      },
+      {
+        "model": "IPhone 15 pro Max"
+      },
+      {
+        "model": "IPhone 16 Plus"
+      },
+      {
+        "model": "IPhone 16"
+      },
+      {
+        "model": "IPhone 16 E"
+      },
+      {
+        "model": "IPhone 16 pro"
+      },
+      {
+        "model": "IPhone 16 pro Max"
+      },
+      {
+        "model": "IPhone 17 Air"
+      },
+      {
+        "model": "IPhone 17 pro"
+      },
+      {
+        "model": "IPhone 17"
+      },
+      {
+        "model": "IPhone 17 pro Max"
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "category": "fundas",
+    "name": "Silicon Case - Roja",
+    "price": 290,
+    "isOffer": false,
+    "image": "/assets/siliconRojo.webp",
+    "gallery": [
+      "/assets/siliconRojo.webp",
+      "/assets/siliconColor.webp"
+    ],
+    "description": "Funda silicon case con acabado suave al tacto y diseño minimalista que protege tu iPhone contra golpes y rayones ofreciendo un ajuste preciso, interior aterciopelado y variedad de colores modernos para combinar estilo y protección en el uso diario.",
+    "variants": [
+      {
+        "model": "IPhone 11"
+      },
+      {
+        "model": "IPhone 11 pro"
+      },
+      {
+        "model": "IPhone 11 pro Max"
+      },
+      {
+        "model": "IPhone 12/ 12 pro"
+      },
+      {
+        "model": "IPhone 12 mini"
+      },
+      {
+        "model": "IPhone 12 pro Max"
+      },
+      {
+        "model": "IPhone 13"
+      },
+      {
+        "model": "IPhone 13 mini"
+      },
+      {
+        "model": "IPhone 13 pro"
+      },
+      {
+        "model": "IPhone 13 pro Max"
+      },
+      {
+        "model": "IPhone 14"
+      },
+      {
+        "model": "IPhone 14 pro"
+      },
+      {
+        "model": "IPhone 14 Plus"
+      },
+      {
+        "model": "IPhone 14 pro Max"
+      },
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 15 Plus"
+      },
+      {
+        "model": "IPhone 15 pro"
+      },
+      {
+        "model": "IPhone 15 pro Max"
+      },
+      {
+        "model": "IPhone 16 Plus"
+      },
+      {
+        "model": "IPhone 16"
+      },
+      {
+        "model": "IPhone 16 E"
+      },
+      {
+        "model": "IPhone 16 pro"
+      },
+      {
+        "model": "IPhone 16 pro Max"
+      },
+      {
+        "model": "IPhone 17 Air"
+      },
+      {
+        "model": "IPhone 17 pro"
+      },
+      {
+        "model": "IPhone 17"
+      },
+      {
+        "model": "IPhone 17 pro Max"
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "category": "fundas",
+    "name": "Silicon Case - Bordo",
+    "price": 290,
+    "isOffer": false,
+    "image": "/assets/siliconBordo.webp",
+    "gallery": [
+      "/assets/siliconBordo.webp",
+      "/assets/siliconColor.webp"
+    ],
+    "description": "Funda silicon case con acabado suave al tacto y diseño minimalista que protege tu iPhone contra golpes y rayones ofreciendo un ajuste preciso, interior aterciopelado y variedad de colores modernos para combinar estilo y protección en el uso diario.",
+    "variants": [
+      {
+        "model": "IPhone 11"
+      },
+      {
+        "model": "IPhone 11 pro"
+      },
+      {
+        "model": "IPhone 11 pro Max"
+      },
+      {
+        "model": "IPhone 12/ 12 pro"
+      },
+      {
+        "model": "IPhone 12 mini"
+      },
+      {
+        "model": "IPhone 12 pro Max"
+      },
+      {
+        "model": "IPhone 13"
+      },
+      {
+        "model": "IPhone 13 mini"
+      },
+      {
+        "model": "IPhone 13 pro"
+      },
+      {
+        "model": "IPhone 13 pro Max"
+      },
+      {
+        "model": "IPhone 14"
+      },
+      {
+        "model": "IPhone 14 pro"
+      },
+      {
+        "model": "IPhone 14 Plus"
+      },
+      {
+        "model": "IPhone 14 pro Max"
+      },
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 15 Plus"
+      },
+      {
+        "model": "IPhone 15 pro"
+      },
+      {
+        "model": "IPhone 15 pro Max"
+      },
+      {
+        "model": "IPhone 16 Plus"
+      },
+      {
+        "model": "IPhone 16"
+      },
+      {
+        "model": "IPhone 16 E"
+      },
+      {
+        "model": "IPhone 16 pro"
+      },
+      {
+        "model": "IPhone 16 pro Max"
+      },
+      {
+        "model": "IPhone 17 Air"
+      },
+      {
+        "model": "IPhone 17 pro"
+      },
+      {
+        "model": "IPhone 17"
+      },
+      {
+        "model": "IPhone 17 pro Max"
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "category": "fundas",
+    "name": "Silicon Case - Terracota",
+    "price": 290,
+    "isOffer": false,
+    "image": "/assets/siliconCobre.webp",
+    "gallery": [
+      "/assets/siliconCobre.webp",
+      "/assets/siliconColor.webp"
+    ],
+    "description": "Funda silicon case con acabado suave al tacto y diseño minimalista que protege tu iPhone contra golpes y rayones ofreciendo un ajuste preciso, interior aterciopelado y variedad de colores modernos para combinar estilo y protección en el uso diario.",
+    "variants": [
+      {
+        "model": "IPhone 11"
+      },
+      {
+        "model": "IPhone 11 pro"
+      },
+      {
+        "model": "IPhone 11 pro Max"
+      },
+      {
+        "model": "IPhone 12/ 12 pro"
+      },
+      {
+        "model": "IPhone 12 mini"
+      },
+      {
+        "model": "IPhone 12 pro Max"
+      },
+      {
+        "model": "IPhone 13"
+      },
+      {
+        "model": "IPhone 13 mini"
+      },
+      {
+        "model": "IPhone 13 pro"
+      },
+      {
+        "model": "IPhone 13 pro Max"
+      },
+      {
+        "model": "IPhone 14"
+      },
+      {
+        "model": "IPhone 14 pro"
+      },
+      {
+        "model": "IPhone 14 Plus"
+      },
+      {
+        "model": "IPhone 14 pro Max"
+      },
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 15 Plus"
+      },
+      {
+        "model": "IPhone 15 pro"
+      },
+      {
+        "model": "IPhone 15 pro Max"
+      },
+      {
+        "model": "IPhone 16 Plus"
+      },
+      {
+        "model": "IPhone 16"
+      },
+      {
+        "model": "IPhone 16 E"
+      },
+      {
+        "model": "IPhone 16 pro"
+      },
+      {
+        "model": "IPhone 16 pro Max"
+      },
+      {
+        "model": "IPhone 17 Air"
+      },
+      {
+        "model": "IPhone 17 pro"
+      },
+      {
+        "model": "IPhone 17"
+      },
+      {
+        "model": "IPhone 17 pro Max"
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "category": "fundas",
+    "name": "Silicon Case - Azul Polar",
+    "price": 290,
+    "isOffer": false,
+    "image": "/assets/siliconAzulPolar.webp",
+    "gallery": [
+      "/assets/siliconAzulPolar.webp",
+      "/assets/siliconColor.webp"
+    ],
+    "description": "Funda silicon case con acabado suave al tacto y diseño minimalista que protege tu iPhone contra golpes y rayones ofreciendo un ajuste preciso, interior aterciopelado y variedad de colores modernos para combinar estilo y protección en el uso diario.",
+    "variants": [
+      {
+        "model": "IPhone 11"
+      },
+      {
+        "model": "IPhone 11 pro"
+      },
+      {
+        "model": "IPhone 11 pro Max"
+      },
+      {
+        "model": "IPhone 12/ 12 pro"
+      },
+      {
+        "model": "IPhone 12 mini"
+      },
+      {
+        "model": "IPhone 12 pro Max"
+      },
+      {
+        "model": "IPhone 13"
+      },
+      {
+        "model": "IPhone 13 mini"
+      },
+      {
+        "model": "IPhone 13 pro"
+      },
+      {
+        "model": "IPhone 13 pro Max"
+      },
+      {
+        "model": "IPhone 14"
+      },
+      {
+        "model": "IPhone 14 pro"
+      },
+      {
+        "model": "IPhone 14 Plus"
+      },
+      {
+        "model": "IPhone 14 pro Max"
+      },
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 15 Plus"
+      },
+      {
+        "model": "IPhone 15 pro"
+      },
+      {
+        "model": "IPhone 15 pro Max"
+      },
+      {
+        "model": "IPhone 16 Plus"
+      },
+      {
+        "model": "IPhone 16"
+      },
+      {
+        "model": "IPhone 16 E"
+      },
+      {
+        "model": "IPhone 16 pro"
+      },
+      {
+        "model": "IPhone 16 pro Max"
+      },
+      {
+        "model": "IPhone 17 Air"
+      },
+      {
+        "model": "IPhone 17 pro"
+      },
+      {
+        "model": "IPhone 17"
+      },
+      {
+        "model": "IPhone 17 pro Max"
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "category": "fundas",
+    "name": "Silicon Case - Verde Fluor",
+    "price": 290,
+    "isOffer": false,
+    "image": "/assets/siliconVerdeFluor.webp",
+    "gallery": [
+      "/assets/siliconVerdeFluor.webp",
+      "/assets/siliconColor.webp"
+    ],
+    "description": "Funda silicon case con acabado suave al tacto y diseño minimalista que protege tu iPhone contra golpes y rayones ofreciendo un ajuste preciso, interior aterciopelado y variedad de colores modernos para combinar estilo y protección en el uso diario.",
+    "variants": [
+      {
+        "model": "IPhone 11"
+      },
+      {
+        "model": "IPhone 11 pro"
+      },
+      {
+        "model": "IPhone 11 pro Max"
+      },
+      {
+        "model": "IPhone 12/ 12 pro"
+      },
+      {
+        "model": "IPhone 12 mini"
+      },
+      {
+        "model": "IPhone 12 pro Max"
+      },
+      {
+        "model": "IPhone 13"
+      },
+      {
+        "model": "IPhone 13 mini"
+      },
+      {
+        "model": "IPhone 13 pro"
+      },
+      {
+        "model": "IPhone 13 pro Max"
+      },
+      {
+        "model": "IPhone 14"
+      },
+      {
+        "model": "IPhone 14 pro"
+      },
+      {
+        "model": "IPhone 14 Plus"
+      },
+      {
+        "model": "IPhone 14 pro Max"
+      },
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 15 Plus"
+      },
+      {
+        "model": "IPhone 15 pro"
+      },
+      {
+        "model": "IPhone 15 pro Max"
+      },
+      {
+        "model": "IPhone 16 Plus"
+      },
+      {
+        "model": "IPhone 16"
+      },
+      {
+        "model": "IPhone 16 E"
+      },
+      {
+        "model": "IPhone 16 pro"
+      },
+      {
+        "model": "IPhone 16 pro Max"
+      },
+      {
+        "model": "IPhone 17 Air"
+      },
+      {
+        "model": "IPhone 17 pro"
+      },
+      {
+        "model": "IPhone 17"
+      },
+      {
+        "model": "IPhone 17 pro Max"
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "category": "fundas",
+    "name": "Silicon Case - Rosa Fluor",
+    "price": 290,
+    "isOffer": false,
+    "image": "/assets/siliconRosaFluor.webp",
+    "gallery": [
+      "/assets/siliconRosaFluor.webp",
+      "/assets/siliconColor.webp"
+    ],
+    "description": "Funda silicon case con acabado suave al tacto y diseño minimalista que protege tu iPhone contra golpes y rayones ofreciendo un ajuste preciso, interior aterciopelado y variedad de colores modernos para combinar estilo y protección en el uso diario.",
+    "variants": [
+      {
+        "model": "IPhone 11"
+      },
+      {
+        "model": "IPhone 11 pro"
+      },
+      {
+        "model": "IPhone 11 pro Max"
+      },
+      {
+        "model": "IPhone 12/ 12 pro"
+      },
+      {
+        "model": "IPhone 12 mini"
+      },
+      {
+        "model": "IPhone 12 pro Max"
+      },
+      {
+        "model": "IPhone 13"
+      },
+      {
+        "model": "IPhone 13 mini"
+      },
+      {
+        "model": "IPhone 13 pro"
+      },
+      {
+        "model": "IPhone 13 pro Max"
+      },
+      {
+        "model": "IPhone 14"
+      },
+      {
+        "model": "IPhone 14 pro"
+      },
+      {
+        "model": "IPhone 14 Plus"
+      },
+      {
+        "model": "IPhone 14 pro Max"
+      },
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 15 Plus"
+      },
+      {
+        "model": "IPhone 15 pro"
+      },
+      {
+        "model": "IPhone 15 pro Max"
+      },
+      {
+        "model": "IPhone 16 Plus"
+      },
+      {
+        "model": "IPhone 16"
+      },
+      {
+        "model": "IPhone 16 E"
+      },
+      {
+        "model": "IPhone 16 pro"
+      },
+      {
+        "model": "IPhone 16 pro Max"
+      },
+      {
+        "model": "IPhone 17 Air"
+      },
+      {
+        "model": "IPhone 17 pro"
+      },
+      {
+        "model": "IPhone 17"
+      },
+      {
+        "model": "IPhone 17 pro Max"
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "category": "fundas",
+    "name": "Silicon Case - Salmon",
+    "price": 290,
+    "isOffer": false,
+    "image": "/assets/siliconSalmon.webp",
+    "gallery": [
+      "/assets/siliconSalmon.webp",
+      "/assets/siliconColor.webp"
+    ],
+    "description": "Funda silicon case con acabado suave al tacto y diseño minimalista que protege tu iPhone contra golpes y rayones ofreciendo un ajuste preciso, interior aterciopelado y variedad de colores modernos para combinar estilo y protección en el uso diario.",
+    "variants": [
+      {
+        "model": "IPhone 11"
+      },
+      {
+        "model": "IPhone 11 pro"
+      },
+      {
+        "model": "IPhone 11 pro Max"
+      },
+      {
+        "model": "IPhone 12/ 12 pro"
+      },
+      {
+        "model": "IPhone 12 mini"
+      },
+      {
+        "model": "IPhone 12 pro Max"
+      },
+      {
+        "model": "IPhone 13"
+      },
+      {
+        "model": "IPhone 13 mini"
+      },
+      {
+        "model": "IPhone 13 pro"
+      },
+      {
+        "model": "IPhone 13 pro Max"
+      },
+      {
+        "model": "IPhone 14"
+      },
+      {
+        "model": "IPhone 14 pro"
+      },
+      {
+        "model": "IPhone 14 Plus"
+      },
+      {
+        "model": "IPhone 14 pro Max"
+      },
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 15 Plus"
+      },
+      {
+        "model": "IPhone 15 pro"
+      },
+      {
+        "model": "IPhone 15 pro Max"
+      },
+      {
+        "model": "IPhone 16 Plus"
+      },
+      {
+        "model": "IPhone 16"
+      },
+      {
+        "model": "IPhone 16 E"
+      },
+      {
+        "model": "IPhone 16 pro"
+      },
+      {
+        "model": "IPhone 16 pro Max"
+      },
+      {
+        "model": "IPhone 17 Air"
+      },
+      {
+        "model": "IPhone 17 pro"
+      },
+      {
+        "model": "IPhone 17"
+      },
+      {
+        "model": "IPhone 17 pro Max"
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "category": "fundas",
+    "name": "Silicon Case - Marron Grisaeco",
+    "price": 290,
+    "isOffer": false,
+    "image": "/assets/siliconMarronGrisaeco.webp",
+    "gallery": [
+      "/assets/siliconMarronGrisaeco.webp",
+      "/assets/siliconColor.webp"
+    ],
+    "description": "Funda silicon case con acabado suave al tacto y diseño minimalista que protege tu iPhone contra golpes y rayones ofreciendo un ajuste preciso, interior aterciopelado y variedad de colores modernos para combinar estilo y protección en el uso diario.",
+    "variants": [
+      {
+        "model": "IPhone 11"
+      },
+      {
+        "model": "IPhone 11 pro"
+      },
+      {
+        "model": "IPhone 11 pro Max"
+      },
+      {
+        "model": "IPhone 12/ 12 pro"
+      },
+      {
+        "model": "IPhone 12 mini"
+      },
+      {
+        "model": "IPhone 12 pro Max"
+      },
+      {
+        "model": "IPhone 13"
+      },
+      {
+        "model": "IPhone 13 mini"
+      },
+      {
+        "model": "IPhone 13 pro"
+      },
+      {
+        "model": "IPhone 13 pro Max"
+      },
+      {
+        "model": "IPhone 14"
+      },
+      {
+        "model": "IPhone 14 pro"
+      },
+      {
+        "model": "IPhone 14 Plus"
+      },
+      {
+        "model": "IPhone 14 pro Max"
+      },
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 15 Plus"
+      },
+      {
+        "model": "IPhone 15 pro"
+      },
+      {
+        "model": "IPhone 15 pro Max"
+      },
+      {
+        "model": "IPhone 16 Plus"
+      },
+      {
+        "model": "IPhone 16"
+      },
+      {
+        "model": "IPhone 16 E"
+      },
+      {
+        "model": "IPhone 16 pro"
+      },
+      {
+        "model": "IPhone 16 pro Max"
+      },
+      {
+        "model": "IPhone 17 Air"
+      },
+      {
+        "model": "IPhone 17 pro"
+      },
+      {
+        "model": "IPhone 17"
+      },
+      {
+        "model": "IPhone 17 pro Max"
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "category": "fundas",
+    "name": "Silicon Case - Violeta Oscuro",
+    "price": 290,
+    "isOffer": false,
+    "image": "/assets/siliconVioletaObscuro.webp",
+    "gallery": [
+      "/assets/siliconVioletaObscuro.webp",
+      "/assets/siliconColor.webp"
+    ],
+    "description": "Funda silicon case con acabado suave al tacto y diseño minimalista que protege tu iPhone contra golpes y rayones ofreciendo un ajuste preciso, interior aterciopelado y variedad de colores modernos para combinar estilo y protección en el uso diario.",
+    "variants": [
+      {
+        "model": "IPhone 11"
+      },
+      {
+        "model": "IPhone 11 pro"
+      },
+      {
+        "model": "IPhone 11 pro Max"
+      },
+      {
+        "model": "IPhone 12/ 12 pro"
+      },
+      {
+        "model": "IPhone 12 mini"
+      },
+      {
+        "model": "IPhone 12 pro Max"
+      },
+      {
+        "model": "IPhone 13"
+      },
+      {
+        "model": "IPhone 13 mini"
+      },
+      {
+        "model": "IPhone 13 pro"
+      },
+      {
+        "model": "IPhone 13 pro Max"
+      },
+      {
+        "model": "IPhone 14"
+      },
+      {
+        "model": "IPhone 14 pro"
+      },
+      {
+        "model": "IPhone 14 Plus"
+      },
+      {
+        "model": "IPhone 14 pro Max"
+      },
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 15 Plus"
+      },
+      {
+        "model": "IPhone 15 pro"
+      },
+      {
+        "model": "IPhone 15 pro Max"
+      },
+      {
+        "model": "IPhone 16 Plus"
+      },
+      {
+        "model": "IPhone 16"
+      },
+      {
+        "model": "IPhone 16 E"
+      },
+      {
+        "model": "IPhone 16 pro"
+      },
+      {
+        "model": "IPhone 16 pro Max"
+      },
+      {
+        "model": "IPhone 17 Air"
+      },
+      {
+        "model": "IPhone 17 pro"
+      },
+      {
+        "model": "IPhone 17"
+      },
+      {
+        "model": "IPhone 17 pro Max"
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "category": "fundas",
+    "name": "Silicon Case - Verde Oliva",
+    "price": 290,
+    "isOffer": false,
+    "image": "/assets/siliconVerdeOliva.webp",
+    "gallery": [
+      "/assets/siliconVerdeOliva.webp",
+      "/assets/siliconColor.webp"
+    ],
+    "description": "Funda silicon case con acabado suave al tacto y diseño minimalista que protege tu iPhone contra golpes y rayones ofreciendo un ajuste preciso, interior aterciopelado y variedad de colores modernos para combinar estilo y protección en el uso diario.",
+    "variants": [
+      {
+        "model": "IPhone 11"
+      },
+      {
+        "model": "IPhone 11 pro"
+      },
+      {
+        "model": "IPhone 11 pro Max"
+      },
+      {
+        "model": "IPhone 12/ 12 pro"
+      },
+      {
+        "model": "IPhone 12 mini"
+      },
+      {
+        "model": "IPhone 12 pro Max"
+      },
+      {
+        "model": "IPhone 13"
+      },
+      {
+        "model": "IPhone 13 mini"
+      },
+      {
+        "model": "IPhone 13 pro"
+      },
+      {
+        "model": "IPhone 13 pro Max"
+      },
+      {
+        "model": "IPhone 14"
+      },
+      {
+        "model": "IPhone 14 pro"
+      },
+      {
+        "model": "IPhone 14 Plus"
+      },
+      {
+        "model": "IPhone 14 pro Max"
+      },
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 15 Plus"
+      },
+      {
+        "model": "IPhone 15 pro"
+      },
+      {
+        "model": "IPhone 15 pro Max"
+      },
+      {
+        "model": "IPhone 16 Plus"
+      },
+      {
+        "model": "IPhone 16"
+      },
+      {
+        "model": "IPhone 16 E"
+      },
+      {
+        "model": "IPhone 16 pro"
+      },
+      {
+        "model": "IPhone 16 pro Max"
+      },
+      {
+        "model": "IPhone 17 Air"
+      },
+      {
+        "model": "IPhone 17 pro"
+      },
+      {
+        "model": "IPhone 17"
+      },
+      {
+        "model": "IPhone 17 pro Max"
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "category": "fundas",
+    "name": "Silicon Case - Rosa Chicle",
+    "price": 290,
+    "isOffer": false,
+    "image": "/assets/siliconRosaChicle.webp",
+    "gallery": [
+      "/assets/siliconRosaChicle.webp",
+      "/assets/siliconColor.webp"
+    ],
+    "description": "Funda silicon case con acabado suave al tacto y diseño minimalista que protege tu iPhone contra golpes y rayones ofreciendo un ajuste preciso, interior aterciopelado y variedad de colores modernos para combinar estilo y protección en el uso diario.",
+    "variants": [
+      {
+        "model": "IPhone 11"
+      },
+      {
+        "model": "IPhone 11 pro"
+      },
+      {
+        "model": "IPhone 11 pro Max"
+      },
+      {
+        "model": "IPhone 12/ 12 pro"
+      },
+      {
+        "model": "IPhone 12 mini"
+      },
+      {
+        "model": "IPhone 12 pro Max"
+      },
+      {
+        "model": "IPhone 13"
+      },
+      {
+        "model": "IPhone 13 mini"
+      },
+      {
+        "model": "IPhone 13 pro"
+      },
+      {
+        "model": "IPhone 13 pro Max"
+      },
+      {
+        "model": "IPhone 14"
+      },
+      {
+        "model": "IPhone 14 pro"
+      },
+      {
+        "model": "IPhone 14 Plus"
+      },
+      {
+        "model": "IPhone 14 pro Max"
+      },
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 15 Plus"
+      },
+      {
+        "model": "IPhone 15 pro"
+      },
+      {
+        "model": "IPhone 15 pro Max"
+      },
+      {
+        "model": "IPhone 16 Plus"
+      },
+      {
+        "model": "IPhone 16"
+      },
+      {
+        "model": "IPhone 16 E"
+      },
+      {
+        "model": "IPhone 16 pro"
+      },
+      {
+        "model": "IPhone 16 pro Max"
+      },
+      {
+        "model": "IPhone 17 Air"
+      },
+      {
+        "model": "IPhone 17 pro"
+      },
+      {
+        "model": "IPhone 17"
+      },
+      {
+        "model": "IPhone 17 pro Max"
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "category": "fundas",
+    "name": "Silicon Case - Amarillo Intenso",
+    "price": 290,
+    "isOffer": false,
+    "image": "/assets/siliconAmarilloIntenso.webp",
+    "gallery": [
+      "/assets/siliconAmarilloIntenso.webp",
+      "/assets/siliconColor.webp"
+    ],
+    "description": "Funda silicon case con acabado suave al tacto y diseño minimalista que protege tu iPhone contra golpes y rayones ofreciendo un ajuste preciso, interior aterciopelado y variedad de colores modernos para combinar estilo y protección en el uso diario.",
+    "variants": [
+      {
+        "model": "IPhone 11"
+      },
+      {
+        "model": "IPhone 11 pro"
+      },
+      {
+        "model": "IPhone 11 pro Max"
+      },
+      {
+        "model": "IPhone 12/ 12 pro"
+      },
+      {
+        "model": "IPhone 12 mini"
+      },
+      {
+        "model": "IPhone 12 pro Max"
+      },
+      {
+        "model": "IPhone 13"
+      },
+      {
+        "model": "IPhone 13 mini"
+      },
+      {
+        "model": "IPhone 13 pro"
+      },
+      {
+        "model": "IPhone 13 pro Max"
+      },
+      {
+        "model": "IPhone 14"
+      },
+      {
+        "model": "IPhone 14 pro"
+      },
+      {
+        "model": "IPhone 14 Plus"
+      },
+      {
+        "model": "IPhone 14 pro Max"
+      },
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 15 Plus"
+      },
+      {
+        "model": "IPhone 15 pro"
+      },
+      {
+        "model": "IPhone 15 pro Max"
+      },
+      {
+        "model": "IPhone 16 Plus"
+      },
+      {
+        "model": "IPhone 16"
+      },
+      {
+        "model": "IPhone 16 E"
+      },
+      {
+        "model": "IPhone 16 pro"
+      },
+      {
+        "model": "IPhone 16 pro Max"
+      },
+      {
+        "model": "IPhone 17 Air"
+      },
+      {
+        "model": "IPhone 17 pro"
+      },
+      {
+        "model": "IPhone 17"
+      },
+      {
+        "model": "IPhone 17 pro Max"
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "category": "fundas",
+    "name": "Silicon Case - Beige Arena",
+    "price": 290,
+    "isOffer": false,
+    "image": "/assets/siliconBeigeArena.webp",
+    "gallery": [
+      "/assets/siliconBeigeArena.webp",
+      "/assets/siliconColor.webp"
+    ],
+    "description": "Funda silicon case con acabado suave al tacto y diseño minimalista que protege tu iPhone contra golpes y rayones ofreciendo un ajuste preciso, interior aterciopelado y variedad de colores modernos para combinar estilo y protección en el uso diario.",
+    "variants": [
+      {
+        "model": "IPhone 11"
+      },
+      {
+        "model": "IPhone 11 pro"
+      },
+      {
+        "model": "IPhone 11 pro Max"
+      },
+      {
+        "model": "IPhone 12/ 12 pro"
+      },
+      {
+        "model": "IPhone 12 mini"
+      },
+      {
+        "model": "IPhone 12 pro Max"
+      },
+      {
+        "model": "IPhone 13"
+      },
+      {
+        "model": "IPhone 13 mini"
+      },
+      {
+        "model": "IPhone 13 pro"
+      },
+      {
+        "model": "IPhone 13 pro Max"
+      },
+      {
+        "model": "IPhone 14"
+      },
+      {
+        "model": "IPhone 14 pro"
+      },
+      {
+        "model": "IPhone 14 Plus"
+      },
+      {
+        "model": "IPhone 14 pro Max"
+      },
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 15 Plus"
+      },
+      {
+        "model": "IPhone 15 pro"
+      },
+      {
+        "model": "IPhone 15 pro Max"
+      },
+      {
+        "model": "IPhone 16 Plus"
+      },
+      {
+        "model": "IPhone 16"
+      },
+      {
+        "model": "IPhone 16 E"
+      },
+      {
+        "model": "IPhone 16 pro"
+      },
+      {
+        "model": "IPhone 16 pro Max"
+      },
+      {
+        "model": "IPhone 17 Air"
+      },
+      {
+        "model": "IPhone 17 pro"
+      },
+      {
+        "model": "IPhone 17"
+      },
+      {
+        "model": "IPhone 17 pro Max"
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "category": "fundas",
+    "name": "Silicon Case - Celeste",
+    "price": 290,
+    "isOffer": false,
+    "image": "/assets/siliconCeleste.webp",
+    "gallery": [
+      "/assets/siliconCeleste.webp",
+      "/assets/siliconColor.webp"
+    ],
+    "description": "Funda silicon case con acabado suave al tacto y diseño minimalista que protege tu iPhone contra golpes y rayones ofreciendo un ajuste preciso, interior aterciopelado y variedad de colores modernos para combinar estilo y protección en el uso diario.",
+    "variants": [
+      {
+        "model": "IPhone 11"
+      },
+      {
+        "model": "IPhone 11 pro"
+      },
+      {
+        "model": "IPhone 11 pro Max"
+      },
+      {
+        "model": "IPhone 12/ 12 pro"
+      },
+      {
+        "model": "IPhone 12 mini"
+      },
+      {
+        "model": "IPhone 12 pro Max"
+      },
+      {
+        "model": "IPhone 13"
+      },
+      {
+        "model": "IPhone 13 mini"
+      },
+      {
+        "model": "IPhone 13 pro"
+      },
+      {
+        "model": "IPhone 13 pro Max"
+      },
+      {
+        "model": "IPhone 14"
+      },
+      {
+        "model": "IPhone 14 pro"
+      },
+      {
+        "model": "IPhone 14 Plus"
+      },
+      {
+        "model": "IPhone 14 pro Max"
+      },
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 15 Plus"
+      },
+      {
+        "model": "IPhone 15 pro"
+      },
+      {
+        "model": "IPhone 15 pro Max"
+      },
+      {
+        "model": "IPhone 16 Plus"
+      },
+      {
+        "model": "IPhone 16"
+      },
+      {
+        "model": "IPhone 16 E"
+      },
+      {
+        "model": "IPhone 16 pro"
+      },
+      {
+        "model": "IPhone 16 pro Max"
+      },
+      {
+        "model": "IPhone 17 Air"
+      },
+      {
+        "model": "IPhone 17 pro"
+      },
+      {
+        "model": "IPhone 17"
+      },
+      {
+        "model": "IPhone 17 pro Max"
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "category": "fundas",
+    "name": "Silicon Case - Menta",
+    "price": 290,
+    "isOffer": false,
+    "image": "/assets/siliconMenta.webp",
+    "gallery": [
+      "/assets/siliconMenta.webp",
+      "/assets/siliconColor.webp"
+    ],
+    "description": "Funda silicon case con acabado suave al tacto y diseño minimalista que protege tu iPhone contra golpes y rayones ofreciendo un ajuste preciso, interior aterciopelado y variedad de colores modernos para combinar estilo y protección en el uso diario.",
+    "variants": [
+      {
+        "model": "IPhone 11"
+      },
+      {
+        "model": "IPhone 11 pro"
+      },
+      {
+        "model": "IPhone 11 pro Max"
+      },
+      {
+        "model": "IPhone 12/ 12 pro"
+      },
+      {
+        "model": "IPhone 12 mini"
+      },
+      {
+        "model": "IPhone 12 pro Max"
+      },
+      {
+        "model": "IPhone 13"
+      },
+      {
+        "model": "IPhone 13 mini"
+      },
+      {
+        "model": "IPhone 13 pro"
+      },
+      {
+        "model": "IPhone 13 pro Max"
+      },
+      {
+        "model": "IPhone 14"
+      },
+      {
+        "model": "IPhone 14 pro"
+      },
+      {
+        "model": "IPhone 14 Plus"
+      },
+      {
+        "model": "IPhone 14 pro Max"
+      },
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 15 Plus"
+      },
+      {
+        "model": "IPhone 15 pro"
+      },
+      {
+        "model": "IPhone 15 pro Max"
+      },
+      {
+        "model": "IPhone 16 Plus"
+      },
+      {
+        "model": "IPhone 16"
+      },
+      {
+        "model": "IPhone 16 E"
+      },
+      {
+        "model": "IPhone 16 pro"
+      },
+      {
+        "model": "IPhone 16 pro Max"
+      },
+      {
+        "model": "IPhone 17 Air"
+      },
+      {
+        "model": "IPhone 17 pro"
+      },
+      {
+        "model": "IPhone 17"
+      },
+      {
+        "model": "IPhone 17 pro Max"
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "category": "fundas",
+    "name": "Silicon Case - Blanco Crema",
+    "price": 290,
+    "isOffer": false,
+    "image": "/assets/siliconBlancoCrema.webp",
+    "gallery": [
+      "/assets/siliconBlancoCrema.webp",
+      "/assets/siliconColor.webp"
+    ],
+    "description": "Funda silicon case con acabado suave al tacto y diseño minimalista que protege tu iPhone contra golpes y rayones ofreciendo un ajuste preciso, interior aterciopelado y variedad de colores modernos para combinar estilo y protección en el uso diario.",
+    "variants": [
+      {
+        "model": "IPhone 11"
+      },
+      {
+        "model": "IPhone 11 pro"
+      },
+      {
+        "model": "IPhone 11 pro Max"
+      },
+      {
+        "model": "IPhone 12/ 12 pro"
+      },
+      {
+        "model": "IPhone 12 mini"
+      },
+      {
+        "model": "IPhone 12 pro Max"
+      },
+      {
+        "model": "IPhone 13"
+      },
+      {
+        "model": "IPhone 13 mini"
+      },
+      {
+        "model": "IPhone 13 pro"
+      },
+      {
+        "model": "IPhone 13 pro Max"
+      },
+      {
+        "model": "IPhone 14"
+      },
+      {
+        "model": "IPhone 14 pro"
+      },
+      {
+        "model": "IPhone 14 Plus"
+      },
+      {
+        "model": "IPhone 14 pro Max"
+      },
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 15 Plus"
+      },
+      {
+        "model": "IPhone 15 pro"
+      },
+      {
+        "model": "IPhone 15 pro Max"
+      },
+      {
+        "model": "IPhone 16 Plus"
+      },
+      {
+        "model": "IPhone 16"
+      },
+      {
+        "model": "IPhone 16 E"
+      },
+      {
+        "model": "IPhone 16 pro"
+      },
+      {
+        "model": "IPhone 16 pro Max"
+      },
+      {
+        "model": "IPhone 17 Air"
+      },
+      {
+        "model": "IPhone 17 pro"
+      },
+      {
+        "model": "IPhone 17"
+      },
+      {
+        "model": "IPhone 17 pro Max"
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "category": "fundas",
+    "name": "Silicon Case - Rosa Suave",
+    "price": 290,
+    "isOffer": false,
+    "image": "/assets/siliconRosaSuave.webp",
+    "gallery": [
+      "/assets/siliconRosaSuave.webp",
+      "/assets/siliconColor.webp"
+    ],
+    "description": "Funda silicon case con acabado suave al tacto y diseño minimalista que protege tu iPhone contra golpes y rayones ofreciendo un ajuste preciso, interior aterciopelado y variedad de colores modernos para combinar estilo y protección en el uso diario.",
+    "variants": [
+      {
+        "model": "IPhone 11"
+      },
+      {
+        "model": "IPhone 11 pro"
+      },
+      {
+        "model": "IPhone 11 pro Max"
+      },
+      {
+        "model": "IPhone 12/ 12 pro"
+      },
+      {
+        "model": "IPhone 12 mini"
+      },
+      {
+        "model": "IPhone 12 pro Max"
+      },
+      {
+        "model": "IPhone 13"
+      },
+      {
+        "model": "IPhone 13 mini"
+      },
+      {
+        "model": "IPhone 13 pro"
+      },
+      {
+        "model": "IPhone 13 pro Max"
+      },
+      {
+        "model": "IPhone 14"
+      },
+      {
+        "model": "IPhone 14 pro"
+      },
+      {
+        "model": "IPhone 14 Plus"
+      },
+      {
+        "model": "IPhone 14 pro Max"
+      },
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 15 Plus"
+      },
+      {
+        "model": "IPhone 15 pro"
+      },
+      {
+        "model": "IPhone 15 pro Max"
+      },
+      {
+        "model": "IPhone 16 Plus"
+      },
+      {
+        "model": "IPhone 16"
+      },
+      {
+        "model": "IPhone 16 E"
+      },
+      {
+        "model": "IPhone 16 pro"
+      },
+      {
+        "model": "IPhone 16 pro Max"
+      },
+      {
+        "model": "IPhone 17 Air"
+      },
+      {
+        "model": "IPhone 17 pro"
+      },
+      {
+        "model": "IPhone 17"
+      },
+      {
+        "model": "IPhone 17 pro Max"
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "category": "fundas",
+    "name": "Silicon Case - Azul Electrico",
+    "price": 290,
+    "isOffer": false,
+    "image": "/assets/siliconAzulElectrico.webp",
+    "gallery": [
+      "/assets/siliconAzulElectrico.webp",
+      "/assets/siliconColor.webp"
+    ],
+    "description": "Funda silicon case con acabado suave al tacto y diseño minimalista que protege tu iPhone contra golpes y rayones ofreciendo un ajuste preciso, interior aterciopelado y variedad de colores modernos para combinar estilo y protección en el uso diario.",
+    "variants": [
+      {
+        "model": "IPhone 11"
+      },
+      {
+        "model": "IPhone 11 pro"
+      },
+      {
+        "model": "IPhone 11 pro Max"
+      },
+      {
+        "model": "IPhone 12/ 12 pro"
+      },
+      {
+        "model": "IPhone 12 mini"
+      },
+      {
+        "model": "IPhone 12 pro Max"
+      },
+      {
+        "model": "IPhone 13"
+      },
+      {
+        "model": "IPhone 13 mini"
+      },
+      {
+        "model": "IPhone 13 pro"
+      },
+      {
+        "model": "IPhone 13 pro Max"
+      },
+      {
+        "model": "IPhone 14"
+      },
+      {
+        "model": "IPhone 14 pro"
+      },
+      {
+        "model": "IPhone 14 Plus"
+      },
+      {
+        "model": "IPhone 14 pro Max"
+      },
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 15 Plus"
+      },
+      {
+        "model": "IPhone 15 pro"
+      },
+      {
+        "model": "IPhone 15 pro Max"
+      },
+      {
+        "model": "IPhone 16 Plus"
+      },
+      {
+        "model": "IPhone 16"
+      },
+      {
+        "model": "IPhone 16 E"
+      },
+      {
+        "model": "IPhone 16 pro"
+      },
+      {
+        "model": "IPhone 16 pro Max"
+      },
+      {
+        "model": "IPhone 17 Air"
+      },
+      {
+        "model": "IPhone 17 pro"
+      },
+      {
+        "model": "IPhone 17"
+      },
+      {
+        "model": "IPhone 17 pro Max"
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "category": "fundas",
+    "name": "Silicon Case -  Azul Noche",
+    "price": 290,
+    "isOffer": false,
+    "image": "/assets/siliconAzulNoche.webp",
+    "gallery": [
+      "/assets/siliconAzulNoche.webp",
+      "/assets/siliconColor.webp"
+    ],
+    "description": "Funda silicon case con acabado suave al tacto y diseño minimalista que protege tu iPhone contra golpes y rayones ofreciendo un ajuste preciso, interior aterciopelado y variedad de colores modernos para combinar estilo y protección en el uso diario.",
+    "variants": [
+      {
+        "model": "IPhone 11"
+      },
+      {
+        "model": "IPhone 11 pro"
+      },
+      {
+        "model": "IPhone 11 pro Max"
+      },
+      {
+        "model": "IPhone 12/ 12 pro"
+      },
+      {
+        "model": "IPhone 12 mini"
+      },
+      {
+        "model": "IPhone 12 pro Max"
+      },
+      {
+        "model": "IPhone 13"
+      },
+      {
+        "model": "IPhone 13 mini"
+      },
+      {
+        "model": "IPhone 13 pro"
+      },
+      {
+        "model": "IPhone 13 pro Max"
+      },
+      {
+        "model": "IPhone 14"
+      },
+      {
+        "model": "IPhone 14 pro"
+      },
+      {
+        "model": "IPhone 14 Plus"
+      },
+      {
+        "model": "IPhone 14 pro Max"
+      },
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 15 Plus"
+      },
+      {
+        "model": "IPhone 15 pro"
+      },
+      {
+        "model": "IPhone 15 pro Max"
+      },
+      {
+        "model": "IPhone 16 Plus"
+      },
+      {
+        "model": "IPhone 16"
+      },
+      {
+        "model": "IPhone 16 E"
+      },
+      {
+        "model": "IPhone 16 pro"
+      },
+      {
+        "model": "IPhone 16 pro Max"
+      },
+      {
+        "model": "IPhone 17 Air"
+      },
+      {
+        "model": "IPhone 17 pro"
+      },
+      {
+        "model": "IPhone 17"
+      },
+      {
+        "model": "IPhone 17 pro Max"
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "category": "fundas",
+    "name": "Silicon Case -  Celeste Pastel",
+    "price": 290,
+    "isOffer": false,
+    "image": "/assets/siliconCelestePastel.webp",
+    "gallery": [
+      "/assets/siliconCelestePastel.webp",
+      "/assets/siliconColor.webp"
+    ],
+    "description": "Funda silicon case con acabado suave al tacto y diseño minimalista que protege tu iPhone contra golpes y rayones ofreciendo un ajuste preciso, interior aterciopelado y variedad de colores modernos para combinar estilo y protección en el uso diario.",
+    "variants": [
+      {
+        "model": "IPhone 11"
+      },
+      {
+        "model": "IPhone 11 pro"
+      },
+      {
+        "model": "IPhone 11 pro Max"
+      },
+      {
+        "model": "IPhone 12/ 12 pro"
+      },
+      {
+        "model": "IPhone 12 mini"
+      },
+      {
+        "model": "IPhone 12 pro Max"
+      },
+      {
+        "model": "IPhone 13"
+      },
+      {
+        "model": "IPhone 13 mini"
+      },
+      {
+        "model": "IPhone 13 pro"
+      },
+      {
+        "model": "IPhone 13 pro Max"
+      },
+      {
+        "model": "IPhone 14"
+      },
+      {
+        "model": "IPhone 14 pro"
+      },
+      {
+        "model": "IPhone 14 Plus"
+      },
+      {
+        "model": "IPhone 14 pro Max"
+      },
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 15 Plus"
+      },
+      {
+        "model": "IPhone 15 pro"
+      },
+      {
+        "model": "IPhone 15 pro Max"
+      },
+      {
+        "model": "IPhone 16 Plus"
+      },
+      {
+        "model": "IPhone 16"
+      },
+      {
+        "model": "IPhone 16 E"
+      },
+      {
+        "model": "IPhone 16 pro"
+      },
+      {
+        "model": "IPhone 16 pro Max"
+      },
+      {
+        "model": "IPhone 17 Air"
+      },
+      {
+        "model": "IPhone 17 pro"
+      },
+      {
+        "model": "IPhone 17"
+      },
+      {
+        "model": "IPhone 17 pro Max"
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "category": "fundas",
+    "name": "Silicon Case - Verde Profundo",
+    "price": 290,
+    "isOffer": false,
+    "image": "/assets/siliconVerdeBosque.webp",
+    "gallery": [
+      "/assets/siliconVerdeBosque.webp",
+      "/assets/siliconColor.webp"
+    ],
+    "description": "Funda silicon case con acabado suave al tacto y diseño minimalista que protege tu iPhone contra golpes y rayones ofreciendo un ajuste preciso, interior aterciopelado y variedad de colores modernos para combinar estilo y protección en el uso diario.",
+    "variants": [
+      {
+        "model": "IPhone 11"
+      },
+      {
+        "model": "IPhone 11 pro"
+      },
+      {
+        "model": "IPhone 11 pro Max"
+      },
+      {
+        "model": "IPhone 12/ 12 pro"
+      },
+      {
+        "model": "IPhone 12 mini"
+      },
+      {
+        "model": "IPhone 12 pro Max"
+      },
+      {
+        "model": "IPhone 13"
+      },
+      {
+        "model": "IPhone 13 mini"
+      },
+      {
+        "model": "IPhone 13 pro"
+      },
+      {
+        "model": "IPhone 13 pro Max"
+      },
+      {
+        "model": "IPhone 14"
+      },
+      {
+        "model": "IPhone 14 pro"
+      },
+      {
+        "model": "IPhone 14 Plus"
+      },
+      {
+        "model": "IPhone 14 pro Max"
+      },
+      {
+        "model": "IPhone 15"
+      },
+      {
+        "model": "IPhone 15 Plus"
+      },
+      {
+        "model": "IPhone 15 pro"
+      },
+      {
+        "model": "IPhone 15 pro Max"
+      },
+      {
+        "model": "IPhone 16 Plus"
+      },
+      {
+        "model": "IPhone 16"
+      },
+      {
+        "model": "IPhone 16 E"
+      },
+      {
+        "model": "IPhone 16 pro"
+      },
+      {
+        "model": "IPhone 16 pro Max"
+      },
+      {
+        "model": "IPhone 17 Air"
+      },
+      {
+        "model": "IPhone 17 pro"
+      },
+      {
+        "model": "IPhone 17"
+      },
+      {
+        "model": "IPhone 17 pro Max"
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "category": "fundas",
+    "name": "Case Ventosa - Celeste",
+    "price": 329,
+    "isOffer": false,
+    "image": "/assets/ventosaCeleste.webp",
+    "gallery": [
+      "/assets/ventosaCeleste.webp",
+      "/assets/Casesventosa.webp"
+    ],
+    "description": "Case con ventosas traseras que permite adherir el celular a superficies lisas como vidrios, espejos o azulejos. Fabricada en silicona flexible, ofrece buen agarre, protección contra golpes y un uso práctico para grabar contenido, videollamadas o apoyar el teléfono sin manos.",
+    "variants": []
+  },
+  {
+    "id": 70,
+    "category": "fundas",
+    "name": "Case Ventosa - Blanca",
+    "price": 329,
+    "isOffer": false,
+    "image": "/assets/ventosaBlanca.webp",
+    "gallery": [
+      "/assets/ventosaBlanca.webp",
+      "/assets/Casesventosa.webp"
+    ],
+    "description": "Case con ventosas traseras que permite adherir el celular a superficies lisas como vidrios, espejos o azulejos. Fabricada en silicona flexible, ofrece buen agarre, protección contra golpes y un uso práctico para grabar contenido, videollamadas o apoyar el teléfono sin manos.",
+    "variants": []
   }
 ]

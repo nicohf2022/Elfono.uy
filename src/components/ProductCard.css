@@ -1,9 +1,10 @@
+/* ===== CARD ===== */
 .product-card {
   background: #fff;
   border-radius: 16px;
-  padding: 1rem;
+  padding: 0.7rem;
   cursor: pointer;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 
   display: flex;
@@ -12,28 +13,35 @@
 
 .product-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* ===== IMAGEN (MISMA LÓGICA QUE CATEGORY) ===== */
+/* ===== IMAGEN ===== */
 .product-image {
-  width: 100%;
-height: 70%;
-  overflow: hidden;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
   border-radius: 12px;
+  padding: 1px;
+  overflow: hidden;
 }
 
 .product-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
   display: block;
 }
 
 /* ===== TEXTO ===== */
 .product-name {
   margin-top: 0.8rem;
-  font-size: 1.05rem;         /* apenas más chico que category-title */
+  font-size: 1.05rem;
   font-weight: 500;
   color: #1d1d1f;
 }

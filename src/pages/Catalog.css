@@ -37,3 +37,71 @@
 .catalog .product-stock {
   display: none !important;
 }
+
+/* Desktop (queda grid como ya lo tenés) */
+/* Mobile: convertir a carrusel con scroll-snap */
+@media (max-width: 768px) {
+  .catalog {
+    padding: 1.2rem;
+  }
+
+  /* Carrusel para categorías */
+  .categories-grid {
+    display: grid;
+    grid-template-columns: none;        /* ✅ RESET de .grid */
+    grid-auto-flow: column;
+    grid-auto-columns: 78%;
+    overflow-x: auto;
+    gap: 1rem;
+
+    padding: 0.25rem 1rem 0.75rem;      /* ✅ padding lateral real */
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: 1rem;          /* ✅ la 1ra card no queda “rara” */
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .categories-grid > * {
+    scroll-snap-align: start;
+    width: 100%;                        /* ✅ cada card ocupa el slide */
+    min-width: 0;
+  }
+
+  /* Carrusel para promos */
+  .offers-grid {
+    display: grid;
+    grid-template-columns: none;        /* ✅ RESET de .grid */
+    grid-auto-flow: column;
+    grid-auto-columns: 78%;
+    overflow-x: auto;
+    gap: 1rem;
+
+    padding: 0.25rem 1rem 0.75rem;
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: 1rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .offers-grid > * {
+    scroll-snap-align: start;
+    width: 100%;
+    min-width: 0;
+  }
+
+  /* Ocultar scrollbar */
+  .categories-grid::-webkit-scrollbar,
+  .offers-grid::-webkit-scrollbar {
+    display: none;
+  }
+  .categories-grid,
+  .offers-grid {
+    scrollbar-width: none;
+  }
+}
+
+/* Ajuste pantallas muy chicas */
+@media (max-width: 420px) {
+  .categories-grid,
+  .offers-grid {
+    grid-auto-columns: 88%;
+  }
+}

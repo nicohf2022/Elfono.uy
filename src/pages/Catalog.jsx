@@ -9,37 +9,23 @@ export const Catalog = () => {
   const navigate = useNavigate();
 
   const categories = [
-    {
-      name: "Cases",
-      image: "/assets/Cases.webp",
-      route: "/categoria/fundas",
-    },
-    {
-      name: "Cargadores",
-      image: "/assets/Cargadores.webp",
-      route: "/categoria/cargadores",
-    },
-    {
-      name: "Accesorios",
-      image: "/assets/Accesorios.webp",
-      route: "/categoria/cables",
-    },
-    {
-      name: "Auriculares",
-      image: "/assets/Auriculares.webp",
-      route: "/categoria/auriculares",
-    },
+    { name: "Cases", image: "/assets/Cases.webp", route: "/categoria/fundas" },
+    { name: "Cargadores", image: "/assets/Cargadores.webp", route: "/categoria/cargadores" },
+    { name: "Accesorios", image: "/assets/Accesorios.webp", route: "/categoria/accesorios" },
+    { name: "Auriculares", image: "/assets/Auriculares.webp", route: "/categoria/auriculares" },
   ];
+
+  const offers = products.filter((p) => p.isOffer);
 
   return (
     <div className="catalog">
-     <div className="catalog-inner"></div>
       {/* 🔍 BUSCADOR */}
       <HomeSearch />
 
       {/* ⭐ CATEGORÍAS */}
       <h1>Categorías de productos</h1>
-      <div className="grid">
+
+      <div className="grid categories-grid">
         {categories.map((cat) => (
           <CategoryCard
             key={cat.name}
@@ -50,16 +36,16 @@ export const Catalog = () => {
         ))}
       </div>
 
-      {/* ⭐ PRODUCTOS */}
+      {/* ⭐ PROMOS 
       <h1 style={{ marginTop: "3rem" }}>Promociones irresistibles</h1>
 
-      <div className="grid">
-        {products
-          .filter((p) => p.isOffer)
-          .map((p) => (
-            <ProductCard key={p.id} product={p} />
-          ))}
+      <div className="grid offers-grid">
+        {offers.map((p) => (
+          <ProductCard key={p.id} product={p} />
+        ))}
       </div>
+      */}
     </div>
+
   );
 };

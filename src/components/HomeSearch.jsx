@@ -1,33 +1,72 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import products from "../data/products.json";
-import { matchesSearch } from "../utils/searchUtils";
+import {
+  matchesGeneralSearch,
+  getRemainingModelQuery,
+  getGeneralQuery,
+  modelMatchesSearch,
+  hasGeneralProductWordsInQuery,
+} from "../components/searchUtils.jsx";
+import { useStock } from "../components/StockContext";
 import "./HomeSearch.css";
 
 export const HomeSearch = () => {
   const [search, setSearch] = useState("");
-  const [suggestions, setSuggestions] = useState([]);
   const navigate = useNavigate();
 
-  const handleChange = (value) => {
-    setSearch(value);
+  const { loading, getProductStock, stockCache } = useStock();
 
-    if (value.length < 2) {
-      setSuggestions([]);
-      return;
-    }
+  const suggestions = useMemo(() => {
+    const cleanValue = search.trim();
+    if (cleanValue.length < 2) return [];
 
-    const results = products
-      .filter((p) => matchesSearch(p, value))
+    return products
+      .filter((product) => {
+        const productStock = getProductStock(product.id);
+        const stockVariants = Array.isArray(productStock?.variants)
+          ? productStock.variants
+          : [];
+
+        const variantsWithStock = stockVariants.filter(
+          (variant) => Number(variant.stock || 0) > 0
+        );
+
+        if (variantsWithStock.length === 0) return false;
+
+        const modelVariantsWithStock = variantsWithStock.filter(
+          (variant) =>
+            String(variant.model || "").trim().toLowerCase() !== "unico"
+        );
+
+        const remainingModelQuery = getRemainingModelQuery(product, cleanValue);
+        const generalQuery = getGeneralQuery(product, cleanValue);
+        const matchesProductFields = matchesGeneralSearch(product, generalQuery);
+        const hasGeneralWords = hasGeneralProductWordsInQuery(product, cleanValue);
+
+        if (remainingModelQuery) {
+          const matchesVariant = modelVariantsWithStock.some((variant) =>
+            modelMatchesSearch(variant.model || "", remainingModelQuery)
+          );
+
+          if (hasGeneralWords) {
+            return matchesProductFields && matchesVariant;
+          }
+
+          return matchesVariant;
+        }
+
+        return matchesProductFields;
+      })
       .slice(0, 5);
-
-    setSuggestions(results);
-  };
+  }, [search, stockCache]);
 
   const goToSearch = (value) => {
-    navigate(`/buscar?q=${value}`);
+    const cleanValue = value.trim();
+    if (!cleanValue) return;
+
+    navigate(`/buscar?q=${encodeURIComponent(cleanValue)}`);
     setSearch("");
-    setSuggestions([]);
   };
 
   return (
@@ -36,7 +75,7 @@ export const HomeSearch = () => {
         type="text"
         placeholder="Buscar fundas, cargadores, iPhone 14..."
         value={search}
-        onChange={(e) => handleChange(e.target.value)}
+        onChange={(e) => setSearch(e.target.value)}
         onKeyDown={(e) => {
           if (e.key === "Enter" && search.trim()) {
             goToSearch(search);
@@ -44,21 +83,55 @@ export const HomeSearch = () => {
         }}
       />
 
-      {suggestions.length > 0 && (
+      {!loading && suggestions.length > 0 && (
         <div className="search-suggestions">
-          {suggestions.map((product) => (
-            <div
-              key={product.id}
-              className="suggestion-item"
-              onClick={() => goToSearch(product.name)}
-            >
-              <img src={product.image} alt={product.name} />
-              <div>
-                <span>{product.name}</span>
-                <small>${product.price}</small>
+          {suggestions.map((product) => {
+            const productStock = getProductStock(product.id);
+            const stockVariants = Array.isArray(productStock?.variants)
+              ? productStock.variants
+              : [];
+
+            const variantsWithStock = stockVariants.filter(
+              (variant) => Number(variant.stock || 0) > 0
+            );
+
+            const modelVariantsWithStock = variantsWithStock.filter(
+              (variant) =>
+                String(variant.model || "").trim().toLowerCase() !== "unico"
+            );
+
+            const remainingModelQuery = getRemainingModelQuery(product, search);
+
+            const matchedVariant = modelVariantsWithStock.find((variant) =>
+              remainingModelQuery
+                ? modelMatchesSearch(variant.model || "", remainingModelQuery)
+                : true
+            );
+
+            const firstAvailableVariant =
+              modelVariantsWithStock[0] || variantsWithStock[0];
+
+            return (
+              <div
+                key={product.id}
+                className="suggestion-item"
+                onClick={() => navigate(`/producto/${product.id}`)}
+              >
+                <img src={product.image} alt={product.name} />
+                <div>
+                  <span>{product.name}</span>
+
+                  {matchedVariant ? (
+                    <small>Disponible para: {matchedVariant.model}</small>
+                  ) : firstAvailableVariant ? (
+                    <small>Disponible para: {firstAvailableVariant.model}</small>
+                  ) : (
+                    <small>${product.price}</small>
+                  )}
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       )}
     </div>

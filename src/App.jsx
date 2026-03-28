@@ -5,7 +5,7 @@ import { Footer } from "./components/Footer";
 import { useState } from "react";
 //pagina principal
 import { Catalog } from "./pages/Catalog";
-
+import { ScrollToTop } from "./components/ScrollToTop";
 
 //paginas
 
@@ -16,6 +16,8 @@ import { ProductPage } from "./pages/ProductPage";
 import { CartDrawer } from "./components/CartDrawer";
 import { CategoryPage } from "./pages/CategoryPage";
 import { SearchPage } from "./pages/SearchPage";
+import { StockProvider } from "./components/StockContext";
+
 
 
 
@@ -27,7 +29,8 @@ function App() {
   return (
 
     <CartProvider>
-
+      <StockProvider>
+ <ScrollToTop />
       <Navbar onOpenCart={() => setIsCartOpen(true)} />
       <CartDrawer isOpen={isCartOpen} onClose={() => setIsCartOpen(false)} />
       <Routes>
@@ -46,6 +49,7 @@ function App() {
       </Routes>
 
       <Footer />
+      </StockProvider>
     </CartProvider>
   );
 }

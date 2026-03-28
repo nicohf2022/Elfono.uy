@@ -11,7 +11,7 @@ export const Nosotros = () => {
           <h1 className="page-title">Nosotros</h1>
 
           <p className="page-text">
-            En <strong>ELFono.UY</strong> nos especializamos en accesorios para iPhone.
+            En <strong>ELFono.uy</strong> nos especializamos en accesorios para iPhone.
             Trabajamos con productos seleccionados que ofrecen calidad, diseño y compatibilidad real.
           </p>
 
