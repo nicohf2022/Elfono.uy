@@ -37,15 +37,10 @@ export const modelMatchesSearch = (model, search) => {
   if (searchWords.length === 0) return false;
   if (searchWords.length > modelWords.length) return false;
 
-  if (searchWords.length === 1) {
-    return modelWords.includes(searchWords[0]);
-  }
-
   const modelEnding = modelWords.slice(-searchWords.length);
 
   return searchWords.every((word, index) => modelEnding[index] === word);
 };
-
 export const getProductGeneralTokens = (product) => {
   return [
     ...splitWords(product.name || ""),
